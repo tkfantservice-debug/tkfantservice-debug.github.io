@@ -914,20 +914,6 @@ const companyData = [
             }
         }
     },
-        {
-        name: 'AONIC',
-        password: 'Aonic@tkfant',
-        lastServiceDate: '2025-06-17',
-        nextServiceDate: '2026-06-17',
-        serviceDates: {
-            '2025-06-17': {
-                fans: ['Fan 1'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1CdKM1NjDwTTxhncA8CsoEt5KJNAQGT7i'
-                }
-            }
-        }
-    },
     // ADD MORE COMPANIES HERE following the same pattern
     // Copy this template for each new company:
     /*
@@ -1027,6 +1013,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
