@@ -123,7 +123,21 @@ const companyData = [
             }
         }
     },
-   
+    {
+        name: 'BINA JAYA T CONSTRUCTION',
+        password: 'Bina@tkfant',
+        lastServiceDate: 'N/A',
+        nextServiceDate: 'N/A',
+        serviceDates: {
+            'N/A': {
+                fans: ['Fan 1','Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1rgk-3MShW0zrO2586-pTaeWWJ_QPY5YP',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1fe1S90EkwZY-PU_MfPXFDb3mb7AZvpaA'
+                }
+            }
+        }
+    },
     {
         name: 'CITY UNIVERSITY',
         password: 'CU@tkfant',
@@ -222,7 +236,7 @@ const companyData = [
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/1oZpPwBJEh68JNOlF6jMpdCaWFywGZlZh'
                 }
             },
-            '2054-06-10': {
+            '2024-06-10': {
                 fans: ['Fan 1', 'Fan 2'],
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1pNBI9rIoEpHDNHKRaMwjMOQd5CzIPgL1',
@@ -511,6 +525,36 @@ const companyData = [
             }
         }
     },
+        {
+        name: 'KOTA PERMAI',
+        password: 'Kota@tkfant',
+        lastServiceDate: '2025-11-03',
+        nextServiceDate: '2026-11-03',
+        serviceDates: {
+            '2025-11-03': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1yKihxyBKlqn9yF_YE96Dwxbwf7TauMRk',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1JBYUKTA8gtSKVhZ9AKD21S19NyFWhBGr'
+                }
+            }
+        }
+    },
+            {
+        name: 'KSP SPORTS',
+        password: 'Ksp@tkfant',
+        lastServiceDate: '2025-11-22',
+        nextServiceDate: '2026-11-22',
+        serviceDates: {
+            '2025-11-22': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1fxgecy30SYsDFTalQ0WONYwwG5GPZJ1G',
+                    'Fan 2': 'http://drive.google.com/drive/u/2/folders/1NlvaAZmeI3pMJE13wxXukvnp962LH02A'
+                }
+            }
+        }
+    },
     {
         name: 'KUEHNE + NAGEL',
         password: 'Kuehne@tkfant',
@@ -655,6 +699,20 @@ const companyData = [
         }
     },
     {
+        name: 'PEJABAT FAMA',
+        password: 'Pf@tkfant',
+        lastServiceDate: '2025-09-23',
+        nextServiceDate: '2026-09-23',
+        serviceDates: {
+            '2025-09-23': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1BEQ1SsR980RhZEqbxJfrXM9tKkjTE7oU'
+                }
+            }
+        }
+    },
+    {
         name: 'PERCETAKAN TENAGA',
         password: 'Pt@tkfant',
         lastServiceDate: '2025-03-22',
@@ -740,7 +798,7 @@ const companyData = [
     {
         name: 'SEA ASIA SDN BHD',
         password: 'Sea@tkfant',
-        lastServiceDate: '2024-07-14',
+        lastServiceDate: '2024-07-24',
         nextServiceDate: 'N/A',
         serviceDates: {
             '2024-07-24': {
@@ -811,6 +869,20 @@ const companyData = [
         }
     },
     {
+        name: 'SJK(C) PENG MING',
+        password: 'Pengming@tkfant',
+        lastServiceDate: '2025-11-15',
+        nextServiceDate: '2026-11-15',
+        serviceDates: {
+            '2025-11-25': {
+                fans: ['Fan 2'],
+                reportLinks: {
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1ihSX9lBxcrV8TFT31hQE9fkeSsxzT9Bk'
+                }
+            }
+        }
+    },
+    {
         name: 'SK SAUJANA IMPIAN 2',
         password: 'Impian2@tkfant',
         lastServiceDate: '2025-02-20',
@@ -872,6 +944,23 @@ const companyData = [
     {
         name: 'TAYLOR (TEG)',
         password: 'Taylor@tkfant',
+        lastServiceDate: '2024-09-14',
+        nextServiceDate: '2025-09-14',
+        serviceDates: {
+            '2024-09-14': {
+                fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Lt2NLPEonu-s4J1VuRU68NQSXEyPkXsE',
+                    'Fan 2': 'http://drive.google.com/drive/u/2/folders/1BFLOtWBxYxemTcUjhjmhL2VA7IKc1SBz',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1o9A-SC1Y2bTfeRAQyHf4k3Pj1iU7KKi7',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1qaryvCURltYc5vs8Onxb7Qwy6ByXXHF0',
+                }
+            }
+        }
+    },
+    {
+        name: 'TAYLOR (UNI)',
+        password: 'Tayloruni@tkfant',
         lastServiceDate: '2024-10-18',
         nextServiceDate: '2025-10-18',
         serviceDates: {
@@ -894,6 +983,20 @@ const companyData = [
                 fans: ['Fan 4'],
                 reportLinks: {
                     'Fan 4': 'https://drive.google.com/drive/u/2/folders/1f8YnvSTLbyim9pcdv4LqrqCW9o8Flh-l'
+                }
+            }
+        }
+    },
+        {
+        name: 'UNIV 360 PLACE',
+        password: 'Univ@tkfant',
+        lastServiceDate: '2025-10-07',
+        nextServiceDate: '2026-10-07',
+        serviceDates: {
+            '2026-10-07': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1-GIjRyF3Qe6SOKSj9i1RpggDF-hWfW78'
                 }
             }
         }
@@ -1025,6 +1128,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
