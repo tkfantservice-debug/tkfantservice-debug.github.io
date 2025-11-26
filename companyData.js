@@ -44,7 +44,7 @@ const companyData = [
                     'Fan 5': 'https://drive.google.com/drive/folders/1SipvpGLh_3oGBwSWTlKBABRGozRGxinQ'
                 }
             },
-            '2025-11-16': {
+            '2024-11-16': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/folders/1NDSWJwiPYw9wRl-jBdxoJXSWwuGKWcra',
@@ -67,17 +67,29 @@ const companyData = [
         }
     },
     {
-        name: 'ANSHIN',
-        password: 'Anshin@tkfant',
-        lastServiceDate: '2025-01-07',
-        nextServiceDate: '2026-01-07',
+        name: 'AONIC SDN BHD',
+        password: 'Aonic@tkfant',
+        lastServiceDate: '2025-09-30',
+        nextServiceDate: '2026-09-30',
         serviceDates: {
-            '2025-01-07': {
-                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+            '2025-09-30': {
+                fans: ['Fan 1'],
                 reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/folders/1AyGRJg1Ly4Az_DrrYt2kpIXi9woKfjyE',
-                    'Fan 2': 'https://drive.google.com/drive/folders/15AOmk2FvTeJ2EaeL5tq7RNk71GoQj9lY',
-                    'Fan 3': 'https://drive.google.com/drive/folders/13edlKJbHkS1JecLTzVCWvPiLdBS8xEDb'
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1uIOWBhGaf9v1CjZcTOJShEDmJa6b9sH9',
+                }
+            }
+        }
+    },
+    {
+        name: 'ARATA AUTO CENTRE SDN BHD',
+        password: 'Arata@tkfant',
+        lastServiceDate: '2025-04-22',
+        nextServiceDate: '2026-04-22',
+        serviceDates: {
+            '2025-04-22': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/folders/18de7jhUFgtxLjFMt6BqVoriJmp_puQDc'
                 }
             }
         }
@@ -1013,6 +1025,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
