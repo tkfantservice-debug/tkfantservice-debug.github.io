@@ -1032,7 +1032,7 @@ const companyData = [
     // ADD MORE COMPANIES HERE following the same pattern
     // Copy this template for each new company:
     /*
-    ,{
+    {
         name: 'COMPANY NAME',
         password: 'Password123',
         lastServiceDate: '2025-XX-XX',
@@ -1046,7 +1046,7 @@ const companyData = [
                 }
             }
         }
-    }
+    },
     */
 ];
 
@@ -1128,6 +1128,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
