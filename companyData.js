@@ -272,7 +272,7 @@ const companyData = [
                     'Fan 2': 'https://drive.google.com/drive/folders/1EwvaRy2Q2Og8GGeHbVRNCzVjZ3A2r_NX',
                     'Fan 3': 'https://drive.google.com/drive/u/2/folders/1ATHAA8H6zjfAYmu7BcDB6fiNP4sojW5Y',
                     'Fan 4': 'https://drive.google.com/drive/u/2/folders/1n12r6DGO9biC37zzgjELwM9eEEBPs16u'
-                }
+            }
             },
             '2025-08-08': {
                 fans: ['Fan 4'],
@@ -1128,6 +1128,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
