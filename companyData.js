@@ -1029,6 +1029,21 @@ const companyData = [
             }
         }
     },
+    {
+        name: 'COMPANY NAME',
+        password: 'Password123',
+        lastServiceDate: '2025-XX-XX',
+        nextServiceDate: '2026-XX-XX',
+        serviceDates: {
+            '2025-XX-XX': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/...',
+                    'Fan 2': 'https://drive.google.com/...'
+                }
+            }
+        }
+    },
     // ADD MORE COMPANIES HERE following the same pattern
     // Copy this template for each new company:
     /*
@@ -1128,6 +1143,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
