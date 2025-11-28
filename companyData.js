@@ -126,10 +126,10 @@ const companyData = [
     {
         name: 'BINA JAYA T CONSTRUCTION',
         password: 'Bina@tkfant',
-        lastServiceDate: 'N/A',
-        nextServiceDate: 'N/A',
+        lastServiceDate: '2025-10-15',
+        nextServiceDate: '2026-10-15',
         serviceDates: {
-            'N/A': {
+            '2025-10-15': {
                 fans: ['Fan 1','Fan 2'],
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1rgk-3MShW0zrO2586-pTaeWWJ_QPY5YP',
@@ -1129,6 +1129,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
