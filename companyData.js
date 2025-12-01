@@ -478,7 +478,7 @@ const companyData = [
                     'Fan 7': 'https://drive.google.com/drive/u/2/folders/1FFz-qQ0US-oe8GrbV2Utfeq-HqcGs__l',
                     'Fan 8': 'https://drive.google.com/drive/u/2/folders/1P-x11ja4oL5m5UYL2kEeYcx8etS-U_Ig'
                 }
-            }，
+            },
             '2025-11-27': {
                 fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4','Fan 6','Fan 7','Fan 8','Fan 9'],
                 reportLinks: {
@@ -494,7 +494,7 @@ const companyData = [
             }
         }
     },
-    {
+    { 
         name: 'ISKANDAR EDUCATION ENTERPRISE SDN BHD',
         password: 'Iskandaredu@tkfant',
         lastServiceDate: '2025-08-01',
@@ -1142,6 +1142,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
