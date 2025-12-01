@@ -460,6 +460,27 @@ const companyData = [
             }
         }
     },
+     {
+        name: 'ISKANDAR （IIB PROPERTY)',
+        password: 'Iskandariib@tkfant',
+        lastServiceDate: '2025-11-27',
+        nextServiceDate: '2026-11-17',
+        serviceDates: {
+            '2025-11-27': {
+                fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4','Fan 6','Fan 7','Fan 8','Fan 9'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1l2kE7id_PYtJL61263_9WM2h5NuZ79Dy',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1srYPtuWIGooBsuOn80Eumgi6ImvlauZw',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1Up3Nj2BixG41J8gLQ8aBYLbTHRtd3Ioo',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1EmFR5oduHk-AF-Gk-mD5GR4P7-dBUvmk',
+                    'Fan 6': 'https://drive.google.com/drive/u/2/folders/1F5E0G4TCQIRa6CU1KQGQtzr-h3-bVIZ0',
+                    'Fan 7': 'https://drive.google.com/drive/u/2/folders/1HADoUAoWGuGfI6I3dQv1O0-VWyp3irhu',
+                    'Fan 8': 'https://drive.google.com/drive/u/2/folders/1v8tbmfhkoFLKR-SbdcHQ9WSs718ZxXrP',
+                    'Fan 9': 'https://drive.google.com/drive/u/2/folders/10SbXcYJAtiMDgKASH9SajumsUmCVPglc'
+                }
+            }
+        }
+    },
     {
         name: 'ISKANDAR EDUCATION ENTERPRISE SDN BHD',
         password: 'Iskandaredu@tkfant',
@@ -1129,6 +1150,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
