@@ -461,7 +461,7 @@ const companyData = [
         }
     },
      {
-        name: 'ISKANDAR （IIB PROPERTY)',
+        name: 'ISKANDAR (IIB PROPERTY)',
         password: 'Iskandariib@tkfant',
         lastServiceDate: '2025-11-27',
         nextServiceDate: '2026-11-17',
@@ -1150,6 +1150,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
