@@ -460,12 +460,25 @@ const companyData = [
             }
         }
     },
-     {
-        name: 'ISKANDAR (IIB PROPERTY)',
-        password: 'Iskandariib@tkfant',
+    {
+        name: 'IIB PROPERTY SERVICE SDN BHD (FORMERLY KNOWN AS ISKANDAR INNOVATIONS SDN BHD)',
+        password: 'Iib@tkfant',
         lastServiceDate: '2025-11-27',
         nextServiceDate: '2026-11-27',
         serviceDates: {
+            '2024-06-25': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5', 'Fan 6', 'Fan 7', 'Fan 8'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1QcTQtaEU3xfofWwbtalrPK-8cUtrVkM9',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1fw4yquiFGK7uh_GEUQQt9IScuQ7UX7Lv',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1XxB3JD-8HShfbiO05Mh97ED3kkZpaSCI',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1GGJbgReljBh2rQSqcRdsNNTWxe44wYI2',
+                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/1cVJO4LnSl-KV7OQ5gSwuELYRxb8M9RBt',
+                    'Fan 6': 'https://drive.google.com/drive/u/2/folders/1QyQ4tV-3E_r4RwXx0z7g38UBjGypSQVQ',
+                    'Fan 7': 'https://drive.google.com/drive/u/2/folders/1FFz-qQ0US-oe8GrbV2Utfeq-HqcGs__l',
+                    'Fan 8': 'https://drive.google.com/drive/u/2/folders/1P-x11ja4oL5m5UYL2kEeYcx8etS-U_Ig'
+                }
+            }，
             '2025-11-27': {
                 fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4','Fan 6','Fan 7','Fan 8','Fan 9'],
                 reportLinks: {
@@ -492,27 +505,6 @@ const companyData = [
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1zT6D-gHg8thH-Io1NJXKBoO8JbssoUuA',
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/10xtVL0YD8M7LOPaxIaYDq4uMsnJ7lc3R'
-                }
-            }
-        }
-    },
-    {
-        name: 'ISKANDAR INNOVATIONS SDN BHD',
-        password: 'Iskandarin@tkfant',
-        lastServiceDate: '2024-06-25',
-        nextServiceDate: '2025-06-25',
-        serviceDates: {
-            '2024-06-25': {
-                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5', 'Fan 6', 'Fan 7', 'Fan 8'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1QcTQtaEU3xfofWwbtalrPK-8cUtrVkM9',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1fw4yquiFGK7uh_GEUQQt9IScuQ7UX7Lv',
-                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1XxB3JD-8HShfbiO05Mh97ED3kkZpaSCI',
-                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1GGJbgReljBh2rQSqcRdsNNTWxe44wYI2',
-                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/1cVJO4LnSl-KV7OQ5gSwuELYRxb8M9RBt',
-                    'Fan 6': 'https://drive.google.com/drive/u/2/folders/1QyQ4tV-3E_r4RwXx0z7g38UBjGypSQVQ',
-                    'Fan 7': 'https://drive.google.com/drive/u/2/folders/1FFz-qQ0US-oe8GrbV2Utfeq-HqcGs__l',
-                    'Fan 8': 'https://drive.google.com/drive/u/2/folders/1P-x11ja4oL5m5UYL2kEeYcx8etS-U_Ig'
                 }
             }
         }
@@ -1150,6 +1142,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
