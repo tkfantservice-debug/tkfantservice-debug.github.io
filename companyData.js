@@ -168,6 +168,21 @@ const companyData = [
             }
         }
     },
+     {
+        name: 'CORLITE PACKAGING',
+        password: 'Corlite@tkfant',
+        lastServiceDate: '2025-12-04',
+        nextServiceDate: '2026-12-04',
+        serviceDates: {
+            '2025-12-04': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1jDiXrr6et1ySw3LhzO3sTWCo_yqUa5I2'
+                
+                }
+            }
+        }
+    },
     {
         name: 'DATARAN SEGAR HUAT HUAT HUAT FOOD COURT',
         password: 'Hhh@tkfant',
@@ -825,6 +840,21 @@ const companyData = [
         }
     },
     {
+        name: 'SEGATRANS (THERMAL)',
+        password: 'Segatrans@tkfant',
+        lastServiceDate: '2025-12-05',
+        nextServiceDate: '2026-12-05',
+        serviceDates: {
+            '2025-12-05': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1A-L-KXZfE2alwVysEXcF0mF6X169F72a'
+                
+                }
+            }
+        }
+    },
+    {
         name: 'SIN TAI HING',
         password: 'Sin@tkfant',
         lastServiceDate: '2025-10-03',
@@ -1142,6 +1172,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
