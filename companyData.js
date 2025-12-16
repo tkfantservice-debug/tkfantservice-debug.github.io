@@ -254,6 +254,22 @@ const companyData = [
         }
     },
     {
+        username: 'EMPIRE',                           
+        displayName: 'EMPIRE FM SDN BHD',
+        password: 'Empire@tkfant',
+        lastServiceDate: '2025-12-10',
+        nextServiceDate: '2026-12-10',
+        serviceDates: {
+            '2025-12-10': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1D5rMzA8OZKbwvLiJHX0fbfp2053NfA5t',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1dbndusNMYVCjBFI3TntVKDz1xFcZvtYb'
+                }
+            }
+        }
+    },
+    {
         username: 'EXHIBITION',                           
         displayName: 'EXHIBITION SAMPLE',
         password: 'bbnmm',
@@ -1259,3 +1275,4 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
