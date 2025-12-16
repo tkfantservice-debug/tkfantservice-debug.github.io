@@ -11,10 +11,18 @@ body {
     color: #333;
     overflow-x: hidden;
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+    min-height: 100vh;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+html.homepage-full,
+html.homepage-full body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%) !important;
+    background-attachment: fixed !important;
 }
 
 .container {
@@ -47,6 +55,11 @@ html {
 
 .logo-box {
     padding: 0.5rem 1rem;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
 }
 
 .logo-text {
@@ -108,6 +121,12 @@ html {
     display: flex;
 }
 
+/* ==================== HOMEPAGE WRAPPER ==================== */
+.homepage-wrapper {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+    min-height: 100vh;
+}
+
 /* ==================== HERO SECTION ==================== */
 .hero {
     min-height: 100vh;
@@ -116,7 +135,7 @@ html {
     justify-content: center;
     padding: 100px 20px 50px;
     position: relative;
-    background: url("your-hero.png") center/cover no-repeat;
+    background: transparent !important;
 }
 
 .hero-overlay {
@@ -147,10 +166,11 @@ html {
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 /* Password page title - smaller */
 .password-page .title {
     font-size: 2.3rem;
-}    
+}
 
 /* Welcome Message Styles */
 .welcome-message {
@@ -185,10 +205,10 @@ html {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* ==================== SERVICE SECTION (Search Box) ==================== */
+/* ==================== SERVICE SECTION (Direct Button) ==================== */
 .service-section {
     padding: 80px 20px;
-    background: gradient(135deg, #00ABEC 0%, #00A2E2 100%);
+    background: transparent !important;
     position: relative;
 }
 
@@ -212,35 +232,6 @@ html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.search-form {
-    position: relative;
-}
-
-.search-box {
-    margin-bottom: 1rem;
-}
-
-#searchInput {
-    width: 100%;
-    padding: 1.25rem 1.5rem;
-    font-size: 1.1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    transition: all 0.3s;
-}
-
-#searchInput::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#searchInput:focus {
-    outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.3);
-}
-
 .go-button {
     width: 100%;
     padding: 1.25rem 2.5rem;
@@ -253,7 +244,9 @@ html {
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-    margin-bottom: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 .go-button:hover {
@@ -266,42 +259,10 @@ html {
     transform: translateY(0);
 }
 
-.suggestions-list {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    max-height: 400px;
-    overflow-y: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.suggestions-list.active {
-    display: block;
-}
-
-.suggestion-item {
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.suggestion-item:last-child {
-    border-bottom: none;
-}
-
-.suggestion-item:hover {
-    background: rgba(255, 255, 255, 0.3);
-    padding-left: 2rem;
-}
-
 /* ==================== OUR SERVICES SECTION ==================== */
 .our-services-section {
     padding: 80px 20px;
-    background: gradient(135deg, #00ABEC 0%, #00A2E2 100%);
+    background: transparent !important;
 }
 
 .service-grid {
@@ -350,7 +311,7 @@ html {
 /* ==================== CONTACT SECTION ==================== */
 .contact-section {
     padding: 80px 20px;
-    background: gradient(135deg, #00ABEC 0%, #00A2E2 100%);
+    background: transparent !important;
 }
 
 .contact-content {
@@ -427,9 +388,28 @@ html {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
 }
 
-.password-page .hero {
-    padding-top: 100px;
+.password-page-wrapper {
+    min-height: calc(100vh - 80px - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+}
+
+.password-hero {
+    width: 100%;
+    padding: 2rem 20px;
     min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .password-container {
@@ -449,12 +429,33 @@ html {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold !important;
 }
 
 .password-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.password-input,
+#usernameInput {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.password-input::placeholder,
+#usernameInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .password-input-wrapper {
@@ -469,10 +470,6 @@ html {
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-}
-
-#passwordInput::placeholder {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .toggle-password {
@@ -536,6 +533,7 @@ html {
     gap: 0.5rem;
     transition: all 0.3s;
     margin-top: 0.5rem;
+    text-decoration: none;
 }
 
 .whatsapp-button:hover {
@@ -567,10 +565,10 @@ html {
 }
 
 .request-password-button {
-    padding: 0.65rem;
+      padding: 0.65rem;
     font-size: 0.95rem;
     font-weight: 600;
-    background: rgba(255, 193, 7, 0.9); /* Amber/Gold color */
+    background: rgba(255, 193, 7, 0.9);
     color: white;
     border: none;
     border-radius: 8px;
@@ -580,6 +578,13 @@ html {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.request-password-button:hover {
+    background: rgba(255, 193, 7, 1);
+    transform: translateY(-2px);
 }
 
 .back-button {
@@ -600,208 +605,222 @@ html {
 }
 
 /* ==================== DATE SELECTION PAGE ==================== */
-.date-section {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.section-header {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.service-history {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.history-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: all 0.3s;
-}
-
-.history-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-}
-
-.history-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(76, 175, 80, 0.3);
-    border-radius: 50%;
+.date-selection-page-wrapper {
+    min-height: calc(100vh - 80px - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
 }
 
-/* Label text (Last Service Date / Next Service Date) */
-.history-info p:first-child {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-}
-
-/* Actual date value */
-.history-info p:nth-child(2) {
-    color: white !important;
-    font-weight: 600 !important;
-    font-size: 1.3rem !important;
-}
-
-/* Days countdown text */
-.history-days {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-    font-weight: 700; 
-}
-
-#dateInput {
+.date-selection-hero {
     width: 100%;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    margin-bottom: 1rem;
+    padding: 2rem 20px;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#dateInput::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    cursor: pointer;
+.date-selection-hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.available-dates {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+.transparent-container {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    max-width: 900px !important;
+    width: 100%;
 }
 
-.available-dates p {
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.dates-list {
+/* Service Schedule Info Section */
+.service-schedule-info {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    max-height: 250px;
-    overflow-y: auto;
-    padding-right: 0.5rem;
+    gap: 1rem;
 }
 
-.date-item {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
+.schedule-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.date-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px);
-}
-
-.date-item span:first-child {
+.schedule-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
     font-weight: 600;
 }
 
-.date-item span:last-child {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
+.schedule-value {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-item.days-remaining {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.date-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.date-list-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.date-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.date-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.date-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.no-data-message {
+    color: white !important;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    background: rgba(255, 193, 7, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    font-weight: 600;
 }
 
 /* ==================== FAN SELECTION PAGE ==================== */
+.fan-selection-page-wrapper {
+    min-height: calc(100vh - 80px - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+}
+
+.fan-selection-hero {
+    width: 100%;
+    padding: 2rem 20px;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fan-selection-hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.transparent-container {
+    max-width: 1200px !important;
+}
+
+.fan-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.fan-grid-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 .fans-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.fan-card {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.fan-card:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.fan-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(76, 175, 80, 0.3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    margin: 0 auto 1rem;
-}
-
-.fan-card h3 {
-    color: white;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.fan-card p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.view-report-button {
     width: 100%;
-    padding: 0.75rem;
-    background: #1a73e8;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: all 0.3s;
 }
 
-.view-report-button:hover {
-    background: #0d5bbd;
-    transform: scale(1.05);
+.fan-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    color: white !important;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 180px;
+    width: 100%;
+}
+
+.fan-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.fan-button .fan-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white !important;
+    line-height: 1.4;
+}
+
+.fan-button .arrow {
+    font-size: 1.8rem;
+    opacity: 0.8;
+    color: white;
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -838,16 +857,6 @@ html {
         grid-template-columns: 1fr;
     }
     
-    .fans-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 1rem;
-    }
-    
-    .history-card {
-        flex-direction: column;
-        text-align: center;
-    }
-    
     .contact-item {
         flex-direction: column;
         align-items: flex-start;
@@ -856,75 +865,51 @@ html {
     .contact-item strong {
         min-width: auto;
     }
+
+    .fans-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .date-selection-page-wrapper,
+    .fan-selection-page-wrapper,
+    .password-page-wrapper {
+        min-height: calc(100vh - 120px);
+    }
+
+    .fan-grid-container,
+    .date-list-container {
+        padding: 1rem;
+    }
+
+    .fan-button {
+        padding: 2rem 1rem;
+        min-height: 150px;
+    }
+
+    .transparent-container {
+        max-width: 100% !important;
+    }
+
+    /* Service schedule responsive */
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .schedule-label,
+    .schedule-value {
+        font-size: 0.95rem;
+    }
+
+    .service-schedule-info {
+        padding: 1rem;
+    }
 }
 
-/* ==================== SCROLLBAR ==================== */
-.suggestions-list::-webkit-scrollbar,
-.dates-list::-webkit-scrollbar {
-    width: 8px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .fans-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        max-width: 100%;
+    }
 }
-
-.suggestions-list::-webkit-scrollbar-track,
-.dates-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-.suggestions-list::-webkit-scrollbar-thumb,
-.dates-list::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-}
-
-.suggestions-list::-webkit-scrollbar-thumb:hover,
-.dates-list::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* ==================== CUSTOM LOGO ==================== */
-.logo-img {
-    height: 70px;  /* change size if needed */
-    width: auto;
-
-}
-/* ------------------------------------------------ */
-/* HERO SECTION BACKGROUND IMAGE STYLE              */
-/* ------------------------------------------------ */
-
-.hero {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 120px 0;  /* Height of hero */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
