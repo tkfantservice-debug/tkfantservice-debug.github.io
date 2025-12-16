@@ -3,155 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Fan - Service Report</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional styles for fan selection grid */
-        .fans-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .fan-btn {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            padding: 2rem 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            color: white;
-            font-family: inherit;
-        }
-
-        .fan-btn:hover {
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .fan-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .fan-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .fan-action {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .no-fans {
-            color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .fan-selection-container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 3rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .fan-selection-content {
-            margin: 2rem 0;
-        }
-
-        .section-subtitle {
-            color: white;
-            font-size: 1.5rem;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-description {
-            color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .selected-date {
-            color: rgba(255, 255, 255, 0.9);
-            text-align: center;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .fan-button {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            padding: 2rem 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            color: white;
-            font-family: inherit;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .fan-button:hover {
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .fan-button .fan-icon {
-            font-size: 3rem;
-        }
-
-        .fan-button .fan-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .fan-button .arrow {
-            font-size: 1.5rem;
-            opacity: 0.7;
-        }
-
-        .no-data-message {
-            color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 2rem;
-            font-size: 1.1rem;
-            background: rgba(255, 193, 7, 0.2);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 193, 7, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .fans-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .fan-selection-container {
-                padding: 2rem 1.5rem;
-            }
-        }
-    </style>
+    <title>Select Fan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="password-page">
+<body class="fan-selection-page">
     <!-- Header Navigation -->
     <header class="header">
         <div class="container">
@@ -163,7 +18,7 @@
                 </div>
                 <nav class="nav-desktop">
                     <a href="index.html#hero" class="nav-link">Home</a>
-                    <a href="index.html#service" class="nav-link">Service Report</a>
+                    <a href="password.html" class="nav-link">Service Report</a>
                     <a href="index.html#contact" class="nav-link">Contact Us</a>
                 </nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -174,39 +29,52 @@
             </div>
             <nav class="nav-mobile" id="mobileMenu">
                 <a href="index.html#hero" class="nav-link">Home</a>
-                <a href="index.html#service" class="nav-link">Service Report</a>
+                <a href="password.html" class="nav-link">Service Report</a>
                 <a href="index.html#contact" class="nav-link">Contact Us</a>
             </nav>
         </div>
     </header>
 
-    <!-- Fan Selection Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="password-container" style="max-width: 900px;">
-                <h1 class="title">Select Fan for Service Report</h1>
-                <p class="company-name" id="companyDisplay">Loading company...</p>
-                <p class="company-name" id="dateDisplay" style="font-size: 1rem; margin-top: -1rem; margin-bottom: 1rem;">Loading date...</p>
-                
-                <p style="color: rgba(255, 255, 255, 0.9); text-align: center; margin-bottom: 2rem; font-size: 1rem;">
-                    👇 Click on a fan below to view its service report
-                </p>
+    <!-- Fan Selection Section - Centered -->
+    <div class="fan-selection-page-wrapper">
+        <section class="hero fan-selection-hero">
+            <div class="container">
+                <div class="password-container transparent-container">
+                    <h1 class="title">Select Fan for Service Report</h1>
+                    <p class="company-name" id="companyDisplay">Loading company...</p>
+                    <p class="company-name" id="dateDisplay" style="font-size: 1rem; margin-top: -1rem; margin-bottom: 1rem;">Loading date...</p>
+                    
+                    <!-- Fan Selection Section with Container -->
+                    <div class="fan-section">
+                        <p style="color: white; text-align: center; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500;">
+                            👇 Click on a fan below to view its service report
+                        </p>
 
-                <!-- Fan Grid - Dynamically populated by JavaScript -->
-                <div id="fanGrid" class="fans-grid">
-                    <!-- Fan cards will be generated here by JavaScript -->
-                    <div style="color: rgba(255, 255, 255, 0.7); text-align: center; padding: 2rem;">
-                        Loading fans...
+                        <!-- Fan Grid Container with defined background -->
+                        <div class="fan-grid-container">
+                            <div id="fanGrid" class="fans-grid">
+                                <!-- Fan cards will be generated here by JavaScript -->
+                                <div style="color: white; text-align: center; padding: 2rem;">
+                                    Loading fans...
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <button type="button" onclick="window.location.href='date-selection.html'" class="back-button" style="margin-top: 2rem;">
-                    ← BACK TO DATE SELECTION
-                </button>
+                    <button type="button" id="backButton" class="back-button" style="margin-top: 2rem;">
+                        ← BACK TO DATE SELECTION
+                    </button>
+                </div>
             </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TK FANTASTIC SDN. BHD. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
 
     <!-- Load Company Data -->
     <script src="companyData.js"></script>
@@ -215,11 +83,11 @@
     <script>
         // ==================== AUTHENTICATION CHECK ====================
         const authenticated = localStorage.getItem('authenticated');
+        const authUsername = localStorage.getItem('authUsername');
         const authCompany = localStorage.getItem('authCompany');
-        const companyName = localStorage.getItem('companyName');
         const selectedDate = localStorage.getItem('selectedDate');
 
-        if (!authenticated || authCompany !== companyName || !selectedDate) {
+        if (!authenticated || !authUsername || !authCompany || !selectedDate) {
             window.location.href = 'password.html';
         }
 
@@ -228,17 +96,29 @@
         const dateDisplay = document.getElementById('dateDisplay');
         const fanGrid = document.getElementById('fanGrid');
 
-        if (companyName && selectedDate) {
-            companyDisplay.textContent = companyName;
+        // Get company data using the username
+        const company = findCompanyByUsername(authUsername);
+
+        if (company && selectedDate) {
+            // Display the full company name
+            companyDisplay.textContent = company.displayName;
             dateDisplay.textContent = `Service Date: ${formatDate(selectedDate)}`;
 
-            const fans = getFansForDate(companyName, selectedDate);
+            // Get fans using the username
+            const fans = getFansForDate(authUsername, selectedDate);
 
-            console.log('Fans for', companyName, selectedDate, ':', fans); // Debug log
+            console.log('Fans for', company.displayName, selectedDate, ':', fans); // Debug log
 
             if (fans && fans.length > 0) {
                 // Clear loading message
                 fanGrid.innerHTML = '';
+                
+                // Set grid columns based on number of fans
+                const fanCount = fans.length;
+                console.log('Fan count:', fanCount); // Debug
+                
+                // Always create equal columns for the number of fans
+                fanGrid.style.gridTemplateColumns = `repeat(${fanCount}, 1fr)`;
                 
                 fans.forEach(fanName => {
                     const button = document.createElement('button');
@@ -250,7 +130,7 @@
                     `;
                     
                     button.onclick = () => {
-                        const reportUrl = getReportUrl(companyName, selectedDate, fanName);
+                        const reportUrl = getReportUrl(authUsername, selectedDate, fanName);
                         
                         console.log('Report URL:', reportUrl); // Debug log
                         
@@ -268,7 +148,7 @@
                 fanGrid.innerHTML = '<div class="no-data-message">No fans available for this service date.</div>';
             }
         } else {
-            window.location.href = 'index.html';
+            window.location.href = 'password.html';
         }
 
         // ==================== MOBILE MENU ====================
@@ -287,6 +167,11 @@
                 });
             });
         }
+
+        // ==================== BACK BUTTON ====================
+        document.getElementById('backButton')?.addEventListener('click', function() {
+            window.location.href = 'date-selection.html';
+        });
     </script>
 </body>
 </html>
