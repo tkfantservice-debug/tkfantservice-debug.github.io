@@ -196,7 +196,7 @@ const companyData = [
         }
     },
     {
-        username: 'SEGAR HUAT',                           
+        username: 'SEGARHUAT',                           
         displayName: 'DATARAN SEGAR HUAT HUAT HUAT FOOD COURT',
         password: 'Hhh@tkfant',
         lastServiceDate: '2025-05-20',
@@ -1275,5 +1275,6 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
