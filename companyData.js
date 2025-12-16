@@ -196,7 +196,7 @@ const companyData = [
         }
     },
     {
-        username: 'SEGER HUAT',                           
+        username: 'SEGAR HUAT',                           
         displayName: 'DATARAN SEGAR HUAT HUAT HUAT FOOD COURT',
         password: 'Hhh@tkfant',
         lastServiceDate: '2025-05-20',
@@ -519,7 +519,7 @@ const companyData = [
     {
         username: 'IIB',                           
         displayName: 'IIB PROPERTY SERVICE SDN BHD (FORMERLY KNOWN AS ISKANDAR INNOVATIONS SDN BHD)',
-        password: 'Iib@tkfant',
+        password: 'IIB@tkfant',
         lastServiceDate: '2025-11-27',
         nextServiceDate: '2026-11-27',
         serviceDates: {
@@ -631,7 +631,7 @@ const companyData = [
         }
     },
     {
-        username: 'KUEAHNE',                           
+        username: 'K+N',                           
         displayName: 'KUEHNE + NAGEL',
         password: 'Kuehne@tkfant',
         lastServiceDate: '2023-12-19',
@@ -1275,4 +1275,5 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
