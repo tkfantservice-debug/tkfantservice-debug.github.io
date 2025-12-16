@@ -113,12 +113,25 @@
                 // Clear loading message
                 fanGrid.innerHTML = '';
                 
-                // Set grid columns based on number of fans
+                // Dynamic grid layout based on fan count
                 const fanCount = fans.length;
                 console.log('Fan count:', fanCount); // Debug
                 
-                // Always create equal columns for the number of fans
-                fanGrid.style.gridTemplateColumns = `repeat(${fanCount}, 1fr)`;
+                // Use responsive grid with max 4 columns on desktop
+                // Grid will automatically wrap to multiple rows
+                let gridColumns;
+                if (fanCount === 1) {
+                    gridColumns = '1fr';
+                } else if (fanCount === 2) {
+                    gridColumns = 'repeat(2, 1fr)';
+                } else if (fanCount === 3) {
+                    gridColumns = 'repeat(3, 1fr)';
+                } else {
+                    // For 4 or more fans, use auto-fit with max 4 columns
+                    gridColumns = 'repeat(auto-fit, minmax(220px, 1fr))';
+                }
+                
+                fanGrid.style.gridTemplateColumns = gridColumns;
                 
                 fans.forEach(fanName => {
                     const button = document.createElement('button');
