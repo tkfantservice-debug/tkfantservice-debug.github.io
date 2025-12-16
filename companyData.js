@@ -4,7 +4,8 @@
 
 const companyData = [
     {
-        name: 'AFN SPORTS EQUIPMENT SDN BHD',
+        username: 'AFN',                                  
+        displayName: 'AFN SPORTS EQUIPMENT SDN BHD',         
         password: 'Afn@tkfant',
         lastServiceDate: '2025-03-28',
         nextServiceDate: '2026-03-28',
@@ -19,7 +20,8 @@ const companyData = [
         }
     },
     {
-        name: 'AKER SOLUTIONS',
+        username: 'AKER',                           
+        displayName: 'AKER SOLUTIONS',              
         password: 'Aker@tkfant',
         lastServiceDate: '2025-08-16',
         nextServiceDate: '2026-08-16',
@@ -44,7 +46,7 @@ const companyData = [
                     'Fan 5': 'https://drive.google.com/drive/folders/1SipvpGLh_3oGBwSWTlKBABRGozRGxinQ'
                 }
             },
-            '2024-11-16': {
+            '2025-11-16': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/folders/1NDSWJwiPYw9wRl-jBdxoJXSWwuGKWcra',
@@ -67,7 +69,25 @@ const companyData = [
         }
     },
     {
-        name: 'AONIC SDN BHD',
+        username: 'ANSHIN',                           
+        displayName: 'ANSHIN',                        
+        password: 'Anshin@tkfant',
+        lastServiceDate: '2025-01-07',
+        nextServiceDate: '2026-01-07',
+        serviceDates: {
+            '2025-01-07': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/folders/1AyGRJg1Ly4Az_DrrYt2kpIXi9woKfjyE',
+                    'Fan 2': 'https://drive.google.com/drive/folders/15AOmk2FvTeJ2EaeL5tq7RNk71GoQj9lY',
+                    'Fan 3': 'https://drive.google.com/drive/folders/13edlKJbHkS1JecLTzVCWvPiLdBS8xEDb'
+                }
+            }
+        }
+    },
+   {
+        username: 'AONIC',                           
+        displayName: 'AONIC SDN BHD',                        
         password: 'Aonic@tkfant',
         lastServiceDate: '2025-09-30',
         nextServiceDate: '2026-09-30',
@@ -80,22 +100,9 @@ const companyData = [
             }
         }
     },
-    {
-        name: 'ARATA AUTO CENTRE SDN BHD',
-        password: 'Arata@tkfant',
-        lastServiceDate: '2025-04-22',
-        nextServiceDate: '2026-04-22',
-        serviceDates: {
-            '2025-04-22': {
-                fans: ['Fan 1'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/folders/18de7jhUFgtxLjFMt6BqVoriJmp_puQDc'
-                }
-            }
-        }
-    },
-    {
-        name: 'ARATA AUTO CENTRE SDN BHD',
+    {  
+        username: 'ARATA',                           
+        displayName:  'ARATA AUTO CENTRE SDN BHD',
         password: 'Arata@tkfant',
         lastServiceDate: '2025-04-22',
         nextServiceDate: '2026-04-22',
@@ -110,7 +117,8 @@ const companyData = [
     },
        
     {
-        name: 'BBCC DEVELOPMENT',
+        username: 'BBCC',                           
+        displayName: 'BBCC DEVELOPMENT',
         password: 'Bbcc@tkfant',
         lastServiceDate: '2025-03-27',
         nextServiceDate: '2026-09-27',
@@ -124,7 +132,8 @@ const companyData = [
         }
     },
     {
-        name: 'BINA JAYA T CONSTRUCTION',
+        username: 'BINAJAYA',                           
+        displayName: 'BINA JAYA T CONSTRUCTION',
         password: 'Bina@tkfant',
         lastServiceDate: '2025-10-15',
         nextServiceDate: '2026-10-15',
@@ -139,7 +148,8 @@ const companyData = [
         }
     },
     {
-        name: 'CITY UNIVERSITY',
+        username: 'CITYUNI',                           
+        displayName:  'CITY UNIVERSITY',
         password: 'CU@tkfant',
         lastServiceDate: '2024-01-16',
         nextServiceDate: 'N/A',
@@ -153,7 +163,8 @@ const companyData = [
         }
     },
     {
-        name: 'CLICKASIA SDN BHD',
+        username: 'CLICKASIA',                           
+        displayName:  'CLICKASIA SDN BHD',
         password: 'Click@tkfant',
         lastServiceDate: '2025-06-13',
         nextServiceDate: '2026-06-13',
@@ -169,7 +180,8 @@ const companyData = [
         }
     },
      {
-        name: 'CORLITE PACKAGING',
+        username: 'CORLITE',                           
+        displayName: 'CORLITE PACKAGING',
         password: 'Corlite@tkfant',
         lastServiceDate: '2025-12-04',
         nextServiceDate: '2026-12-04',
@@ -184,7 +196,8 @@ const companyData = [
         }
     },
     {
-        name: 'DATARAN SEGAR HUAT HUAT HUAT FOOD COURT',
+        username: 'SEGER HUAT',                           
+        displayName: 'DATARAN SEGAR HUAT HUAT HUAT FOOD COURT',
         password: 'Hhh@tkfant',
         lastServiceDate: '2025-05-20',
         nextServiceDate: '2026-05-20',
@@ -204,7 +217,8 @@ const companyData = [
         }
     },
     {
-        name: 'DHUB',
+        username: 'DHUB',                           
+        displayName: 'DHUB',
         password: 'Dhub@tkfant',
         lastServiceDate: 'N/A',
         nextServiceDate: 'N/A',
@@ -218,7 +232,8 @@ const companyData = [
         }
     },
     {
-        name: 'ECRL',
+        username: 'ECRL',                           
+        displayName: 'ECRL',
         password: 'Ecrl@tkfant',
         lastServiceDate: '2025-05-02',
         nextServiceDate: '2026-05-02',
@@ -239,7 +254,8 @@ const companyData = [
         }
     },
     {
-        name: 'EXHIBITION SAMPLE',
+        username: 'EXHIBITION',                           
+        displayName: 'EXHIBITION SAMPLE',
         password: 'bbnmm',
         lastServiceDate: 'N/A',
         nextServiceDate: 'N/A',
@@ -261,7 +277,8 @@ const companyData = [
         }
     },
     {
-        name: 'FEDEX-BUKIT JELUTONG',
+        username: 'FEDEX BJ',                           
+        displayName: 'FEDEX-BUKIT JELUTONG',
         password: 'Fedexbj@tkfant',
         lastServiceDate: 'N/A',
         nextServiceDate: 'N/A',
@@ -275,7 +292,8 @@ const companyData = [
         }
     },
     {
-        name: 'FEDEX-HITECH',
+        username: 'FEDEX HT',                           
+        displayName: 'FEDEX-HITECH',
         password: 'Hitech@tkfant',
         lastServiceDate: '2025-04-29',
         nextServiceDate: '2026-04-29',
@@ -298,7 +316,8 @@ const companyData = [
         }
     },
     {
-        name: 'FEDEX-KLIA',
+        username: 'FEDEX KLIA',                           
+        displayName: 'FEDEX-KLIA',
         password: 'Klia@tkfant',
         lastServiceDate: '2025-04-16',
         nextServiceDate: '2026-04-16',
@@ -313,7 +332,8 @@ const companyData = [
         }
     },
     {
-        name: 'FINEGUARD INDUSTRIES',
+        username: 'FINEGUARD',                           
+        displayName: 'FINEGUARD INDUSTRIES',
         password: 'Fine@tkfant',
         lastServiceDate: '2025-07-04',
         nextServiceDate: '2026-07-04',
@@ -327,7 +347,8 @@ const companyData = [
         }
     },
     {
-        name: 'FOODAGON CONNEXION SDN BHD',
+        username: 'FOODAGON',                           
+        displayName: 'FOODAGON CONNEXION SDN BHD',
         password: 'Food@tkfant',
         lastServiceDate: '2025-05-12',
         nextServiceDate: '2026-05-12',
@@ -341,7 +362,8 @@ const companyData = [
         }
     },
     {
-        name: 'FURI GLOBAL SDN BHD',
+        username: 'FURI',                           
+        displayName: 'FURI GLOBAL SDN BHD',
         password: 'Furi@tkfant',
         lastServiceDate: '2025-09-08',
         nextServiceDate: '2026-09-08',
@@ -355,7 +377,8 @@ const companyData = [
         }
     },
     {
-        name: 'GBB BAKERY',
+        username: 'GBB',                           
+        displayName: 'GBB BAKERY',
         password: 'Gbb@tkfant',
         lastServiceDate: '2024-01-05',
         nextServiceDate: '2025-01-05',
@@ -369,7 +392,8 @@ const companyData = [
         }
     },
     {
-        name: 'GOOD TIMING FOOD VILLAGE',
+        username: 'GOODTIMING',                           
+        displayName: 'GOOD TIMING FOOD VILLAGE',
         password: 'Good@tkfant',
         lastServiceDate: '2025-07-30',
         nextServiceDate: '2026-07-30',
@@ -383,7 +407,8 @@ const companyData = [
         }
     },
     {
-        name: 'HONDA LOGISTICS',
+        username: 'HONDA',                           
+        displayName: 'HONDA LOGISTICS',
         password: 'Honda@tkfant',
         lastServiceDate: '2024-12-07',
         nextServiceDate: '2025-06-07',
@@ -476,7 +501,8 @@ const companyData = [
         }
     },
     {
-        name: 'IIB PROPERTY SERVICE SDN BHD (FORMERLY KNOWN AS ISKANDAR INNOVATIONS SDN BHD)',
+        username: 'IIB',                           
+        displayName: 'IIB PROPERTY SERVICE SDN BHD (FORMERLY KNOWN AS ISKANDAR INNOVATIONS SDN BHD)',
         password: 'Iib@tkfant',
         lastServiceDate: '2025-11-27',
         nextServiceDate: '2026-11-27',
@@ -510,7 +536,8 @@ const companyData = [
         }
     },
     { 
-        name: 'ISKANDAR EDUCATION ENTERPRISE SDN BHD',
+        username: 'ISKANDAREDU',                           
+        displayName: 'ISKANDAR EDUCATION ENTERPRISE SDN BHD',
         password: 'Iskandaredu@tkfant',
         lastServiceDate: '2025-08-01',
         nextServiceDate: '2026-08-01',
@@ -525,7 +552,8 @@ const companyData = [
         }
     },
     {
-        name: 'JOYCAMP PJ SDN BHD',
+        username: 'JOYCAMP',                           
+        displayName: 'JOYCAMP PJ SDN BHD',
         password: 'Joy@tkfant',
         lastServiceDate: '2024-10-26',
         nextServiceDate: '2025-10-26',
@@ -539,7 +567,8 @@ const companyData = [
         }
     },
     {
-        name: 'KOH TIKI OKR SDN BHD',
+        username: 'KOH TIKI',                           
+        displayName: 'KOH TIKI OKR SDN BHD',
         password: 'Koh@tkfant',
         lastServiceDate: '2025-06-09',
         nextServiceDate: '2026-06-09',
@@ -554,7 +583,8 @@ const companyData = [
         }
     },
         {
-        name: 'KOTA PERMAI',
+        username: 'KOTA PERMAI',                           
+        displayName: 'KOTA PERMAI',
         password: 'Kota@tkfant',
         lastServiceDate: '2025-11-03',
         nextServiceDate: '2026-11-03',
@@ -569,7 +599,8 @@ const companyData = [
         }
     },
             {
-        name: 'KSP SPORTS',
+        username: 'KSP',                           
+        displayName: 'KSP SPORTS',
         password: 'Ksp@tkfant',
         lastServiceDate: '2025-11-22',
         nextServiceDate: '2026-11-22',
@@ -584,7 +615,8 @@ const companyData = [
         }
     },
     {
-        name: 'KUEHNE + NAGEL',
+        username: 'KUEAHNE',                           
+        displayName: 'KUEHNE + NAGEL',
         password: 'Kuehne@tkfant',
         lastServiceDate: '2023-12-19',
         nextServiceDate: 'N/A',
@@ -607,7 +639,8 @@ const companyData = [
         }
     },
     {
-        name: 'LH ELECTRIC & SERVICES',
+        username: 'LH',                           
+        displayName: 'LH ELECTRIC & SERVICES',
         password: 'Lh@tkfant',
         lastServiceDate: '2025-04-25',
         nextServiceDate: '2026-04-25',
@@ -622,7 +655,8 @@ const companyData = [
         }
     },
     {
-        name: "LOTUS'S STORE (MALAYSIA) SDN BHD",
+        username: 'LOTUS',                           
+        displayName: "LOTUS'S STORE (MALAYSIA) SDN BHD",
         password: 'Lotus@tkfant',
         lastServiceDate: '2025-02-12',
         nextServiceDate: '2025-07-01',
@@ -650,7 +684,8 @@ const companyData = [
         }
     },
     {
-        name: 'LUXE ACRE SDN BHD',
+        username: 'LUXE',                           
+        displayName: 'LUXE ACRE SDN BHD',
         password: 'Luxe@tkfant',
         lastServiceDate: '2025-03-07',
         nextServiceDate: '2026-03-07',
@@ -664,7 +699,8 @@ const companyData = [
         }
     },
     {
-        name: 'MACRO PERSPECTIVE SDN BHD',
+        username: 'MACRO',                           
+        displayName: 'MACRO PERSPECTIVE SDN BHD',
         password: 'Macro@tkfant',
         lastServiceDate: '2025-05-14',
         nextServiceDate: '2026-05-14',
@@ -678,7 +714,8 @@ const companyData = [
         }
     },
     {
-        name: 'MILLENNIUM WELT SDN BHD',
+        username: 'MILLENNIUM',                           
+        displayName: 'MILLENNIUM WELT SDN BHD',
         password: 'Millen@tkfant',
         lastServiceDate: '2025-02-05',
         nextServiceDate: 'N/A',
@@ -694,7 +731,8 @@ const companyData = [
         }
     },
     {
-        name: 'NESTLE MANUFACTURING (M) SDN BHD (CHEMBONG)',
+        username: 'NESTLE CHB',                           
+        displayName: 'NESTLE MANUFACTURING (M) SDN BHD (CHEMBONG)',
         password: 'Chembong@tkfant',
         lastServiceDate: '2024-08-30',
         nextServiceDate: 'N/A',
@@ -708,7 +746,8 @@ const companyData = [
         }
     },
     {
-        name: 'NESTLE MANUFACTURING (M) SDN BHD (SA)',
+        username: 'NESTLE SA',                           
+        displayName: 'NESTLE MANUFACTURING (M) SDN BHD (SA)',
         password: 'Sa@tkfant',
         lastServiceDate: '2025-04-04',
         nextServiceDate: '2026-04-05',
@@ -727,7 +766,8 @@ const companyData = [
         }
     },
     {
-        name: 'PEJABAT FAMA',
+        username: 'FAMA',                           
+        displayName: 'PEJABAT FAMA',
         password: 'Pf@tkfant',
         lastServiceDate: '2025-09-23',
         nextServiceDate: '2026-09-23',
@@ -741,7 +781,8 @@ const companyData = [
         }
     },
     {
-        name: 'PERCETAKAN TENAGA',
+        username: 'TENAGA',                           
+        displayName: 'PERCETAKAN TENAGA',
         password: 'Pt@tkfant',
         lastServiceDate: '2025-03-22',
         nextServiceDate: '2026-03-22',
@@ -755,7 +796,8 @@ const companyData = [
         }
     },
     {
-        name: 'PERODUA MANUFACTURING SDN BHD',
+        username: 'PERODUA',                           
+        displayName: 'PERODUA MANUFACTURING SDN BHD',
         password: 'Perodua@tkfant',
         lastServiceDate: '2025-08-16',
         nextServiceDate: '2026-08-16',
@@ -777,7 +819,8 @@ const companyData = [
         }
     },
     {
-        name: 'REDVEST',
+        username: 'REDVEST',                           
+        displayName: 'REDVEST',
         password: 'Redvest@tkfant',
         lastServiceDate: '2025-06-17',
         nextServiceDate: '2026-06-17',
@@ -793,7 +836,8 @@ const companyData = [
         }
     },
     {
-        name: 'SAGA MAKMUR SDN BHD',
+        username: 'SAGA',                           
+        displayName: 'SAGA MAKMUR SDN BHD',
         password: 'Saga@tkfant',
         lastServiceDate: '2025-02-09',
         nextServiceDate: '2026-02-09',
@@ -824,7 +868,8 @@ const companyData = [
         }
     },
     {
-        name: 'SEA ASIA SDN BHD',
+        username: 'SEA ASIA',                           
+        displayName: 'SEA ASIA SDN BHD',
         password: 'Sea@tkfant',
         lastServiceDate: '2024-07-24',
         nextServiceDate: 'N/A',
@@ -840,7 +885,8 @@ const companyData = [
         }
     },
     {
-        name: 'SEGATRANS (THERMAL)',
+        username: 'SEGATRANS',                           
+        displayName: 'SEGATRANS (THERMAL)',
         password: 'Segatrans@tkfant',
         lastServiceDate: '2025-12-05',
         nextServiceDate: '2026-12-05',
@@ -855,7 +901,8 @@ const companyData = [
         }
     },
     {
-        name: 'SIN TAI HING',
+        username: 'STH',                           
+        displayName: 'SIN TAI HING',
         password: 'Sin@tkfant',
         lastServiceDate: '2025-10-03',
         nextServiceDate: 'N/A',
@@ -877,7 +924,8 @@ const companyData = [
         }
     },
     {
-        name: 'SJK(C) HUA LIAN 3',
+        username: 'HUALIAN3',                           
+        displayName: 'SJK(C) HUA LIAN 3',
         password: 'Hualian3@tkfant',
         lastServiceDate: '2025-03-20',
         nextServiceDate: '2026-03-20',
@@ -897,7 +945,8 @@ const companyData = [
         }
     },
     {
-        name: 'SJK(C) KEHSENG',
+        username: 'KEHSENG',                           
+        displayName: 'SJK(C) KEHSENG',
         password: 'Kehseng@tkfant',
         lastServiceDate: '2024-10-08',
         nextServiceDate: 'N/A',
@@ -912,7 +961,8 @@ const companyData = [
         }
     },
     {
-        name: 'SJK(C) PENG MING',
+        username: 'PENGMING',                           
+        displayName: 'SJK(C) PENG MING',
         password: 'Pengming@tkfant',
         lastServiceDate: '2025-11-15',
         nextServiceDate: '2026-11-15',
@@ -926,7 +976,8 @@ const companyData = [
         }
     },
     {
-        name: 'SK SAUJANA IMPIAN 2',
+        username: 'IMPIAN2',                           
+        displayName: 'SK SAUJANA IMPIAN 2',
         password: 'Impian2@tkfant',
         lastServiceDate: '2025-02-20',
         nextServiceDate: '2026-05-22',
@@ -941,7 +992,8 @@ const companyData = [
         }
     },
     {
-        name: 'SMK TELOK DATOK',
+        username: 'TELOKDATOK',                           
+        displayName: 'SMK TELOK DATOK',
         password: 'Smk@tkfant',
         lastServiceDate: '2025-05-22',
         nextServiceDate: '2026-05-22',
@@ -956,7 +1008,8 @@ const companyData = [
         }
     },
     {
-        name: 'SUNSET',
+        username: 'SUNSET',                           
+        displayName: 'SUNSET',
         password: 'Sunset@tkfant',
         lastServiceDate: '2025-06-17',
         nextServiceDate: '2026-06-17',
@@ -970,7 +1023,8 @@ const companyData = [
         }
     },
     {
-        name: 'T7 AERO REPORT',
+        username: 'T7AERO',                           
+        displayName: 'T7 AERO REPORT',
         password: 'T7@tkfant',
         lastServiceDate: '2024-01-17',
         nextServiceDate: 'N/A',
@@ -985,7 +1039,8 @@ const companyData = [
         }
     },
     {
-        name: 'TAYLOR (TEG)',
+        username: 'TAYLORTEG',                           
+        displayName: 'TAYLOR (TEG)',
         password: 'Taylor@tkfant',
         lastServiceDate: '2024-09-14',
         nextServiceDate: '2025-09-14',
@@ -1002,7 +1057,8 @@ const companyData = [
         }
     },
     {
-        name: 'TAYLOR (UNI)',
+        username: 'TAYLORUNI',                           
+        displayName: 'TAYLOR (UNI)',
         password: 'Tayloruni@tkfant',
         lastServiceDate: '2024-10-18',
         nextServiceDate: '2025-10-18',
@@ -1017,7 +1073,8 @@ const companyData = [
         }
     },
     {
-        name: 'UCSI INTERNATIONAL SCHOOL SB',
+        username: 'UCSI',                           
+        displayName: 'UCSI INTERNATIONAL SCHOOL SB',
         password: 'Ucsi@tkfant',
         lastServiceDate: '2025-08-06',
         nextServiceDate: '2025-08-09',
@@ -1031,7 +1088,8 @@ const companyData = [
         }
     },
         {
-        name: 'UNIV 360 PLACE',
+        username: 'UNIV',                           
+        displayName: 'UNIV 360 PLACE',
         password: 'Univ@tkfant',
         lastServiceDate: '2025-10-07',
         nextServiceDate: '2026-10-07',
@@ -1045,7 +1103,8 @@ const companyData = [
         }
     },
     {
-        name: 'UPPER HERITAGE SDN BHD',
+        username: 'UPPER',                           
+        displayName: 'UPPER HERITAGE SDN BHD',
         password: 'Upper@tkfant',
         lastServiceDate: '2025-07-25',
         nextServiceDate: '2026-07-25',
@@ -1059,7 +1118,8 @@ const companyData = [
         }
     },
     {
-        name: 'YINGWAH',
+        username: 'YINGWAH',                           
+        displayName: 'YINGWAH',
         password: 'Yingwah@tkfant',
         lastServiceDate: '2025-06-17',
         nextServiceDate: '2026-06-17',
@@ -1076,8 +1136,9 @@ const companyData = [
     // ADD MORE COMPANIES HERE following the same pattern
     // Copy this template for each new company:
     /*
-    {
-        name: 'COMPANY NAME',
+    ,{
+        username: 'shortname',                        // ← Short username for login
+        displayName: 'FULL COMPANY NAME SDN BHD',     // ← Full name for display
         password: 'Password123',
         lastServiceDate: '2025-XX-XX',
         nextServiceDate: '2026-XX-XX',
@@ -1090,32 +1151,52 @@ const companyData = [
                 }
             }
         }
-    },
+    }
     */
 ];
 
 // ==================== HELPER FUNCTIONS ====================
 
-// Find company by name
-function findCompany(companyName) {
-    const searchTerm = companyName.trim().toUpperCase();
-    return companyData.find(c => c.name.toUpperCase() === searchTerm);
+// Find company by username (for login)
+function findCompanyByUsername(username) {
+    const searchTerm = username.trim().toLowerCase();
+    return companyData.find(c => c.username.toLowerCase() === searchTerm);
 }
 
-// Verify password
-function verifyPassword(companyName, password) {
-    const company = findCompany(companyName);
+// Find company by display name (for display/legacy)
+function findCompanyByDisplayName(displayName) {
+    const searchTerm = displayName.trim().toUpperCase();
+    return companyData.find(c => c.displayName.toUpperCase() === searchTerm);
+}
+
+// Find company by either username or display name
+function findCompany(identifier) {
+    return findCompanyByUsername(identifier) || findCompanyByDisplayName(identifier);
+}
+
+// Verify username and password
+function verifyCredentials(username, password) {
+    const company = findCompanyByUsername(username);
+    return company && company.password === password ? company : null;
+}
+
+// Verify password (legacy function - kept for compatibility)
+function verifyPassword(identifier, password) {
+    const company = findCompany(identifier);
     return company && company.password === password;
 }
 
 // Get all companies for search
 function getAllCompanies() {
-    return companyData.map(c => ({ name: c.name }));
+    return companyData.map(c => ({ 
+        username: c.username,
+        displayName: c.displayName 
+    }));
 }
 
 // Get service dates for a company (sorted, newest first)
-function getServiceDates(companyName) {
-    const company = findCompany(companyName);
+function getServiceDates(identifier) {
+    const company = findCompany(identifier);
     if (!company) return [];
     
     return Object.keys(company.serviceDates).sort((a, b) => {
@@ -1126,17 +1207,23 @@ function getServiceDates(companyName) {
 }
 
 // Get fans for a specific date
-function getFansForDate(companyName, date) {
-    const company = findCompany(companyName);
+function getFansForDate(identifier, date) {
+    const company = findCompany(identifier);
     if (!company || !company.serviceDates[date]) return [];
     return company.serviceDates[date].fans;
 }
 
 // Get report URL for a specific fan
-function getReportUrl(companyName, date, fanName) {
-    const company = findCompany(companyName);
+function getReportUrl(identifier, date, fanName) {
+    const company = findCompany(identifier);
     if (!company || !company.serviceDates[date]) return null;
     return company.serviceDates[date].reportLinks[fanName];
+}
+
+// Get company display name
+function getCompanyDisplayName(identifier) {
+    const company = findCompany(identifier);
+    return company ? company.displayName : identifier;
 }
 
 // Format date for display
@@ -1172,20 +1259,3 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
