@@ -293,7 +293,7 @@ const companyData = [
         }
     },
     {
-        username: 'FEDEX BJ',                           
+        username: 'FEDEXBJ',                           
         displayName: 'FEDEX-BUKIT JELUTONG',
         password: 'Fedexbj@tkfant',
         lastServiceDate: 'N/A',
@@ -308,7 +308,7 @@ const companyData = [
         }
     },
     {
-        username: 'FEDEX HT',                           
+        username: 'FEDEXHT',                           
         displayName: 'FEDEX-HITECH',
         password: 'Hitech@tkfant',
         lastServiceDate: '2025-04-29',
@@ -332,7 +332,7 @@ const companyData = [
         }
     },
     {
-        username: 'FEDEX KLIA',                           
+        username: 'FEDEXKLIA',                           
         displayName: 'FEDEX-KLIA',
         password: 'Klia@tkfant',
         lastServiceDate: '2025-04-16',
@@ -583,7 +583,7 @@ const companyData = [
         }
     },
     {
-        username: 'KOH TIKI',                           
+        username: 'KOHTIKI',                           
         displayName: 'KOH TIKI OKR SDN BHD',
         password: 'Koh@tkfant',
         lastServiceDate: '2025-06-09',
@@ -599,7 +599,7 @@ const companyData = [
         }
     },
         {
-        username: 'KOTA PERMAI',                           
+        username: 'KOTAPERMAI',                           
         displayName: 'KOTA PERMAI',
         password: 'Kota@tkfant',
         lastServiceDate: '2025-11-03',
@@ -631,7 +631,7 @@ const companyData = [
         }
     },
     {
-        username: 'K+N',                           
+        username: 'KN',                           
         displayName: 'KUEHNE + NAGEL',
         password: 'Kuehne@tkfant',
         lastServiceDate: '2023-12-19',
@@ -747,7 +747,7 @@ const companyData = [
         }
     },
     {
-        username: 'NESTLE CHB',                           
+        username: 'NESTLECHB',                           
         displayName: 'NESTLE MANUFACTURING (M) SDN BHD (CHEMBONG)',
         password: 'Chembong@tkfant',
         lastServiceDate: '2024-08-30',
@@ -762,7 +762,7 @@ const companyData = [
         }
     },
     {
-        username: 'NESTLE SA',                           
+        username: 'NESTLESA',                           
         displayName: 'NESTLE MANUFACTURING (M) SDN BHD (SA)',
         password: 'Sa@tkfant',
         lastServiceDate: '2025-04-04',
@@ -884,7 +884,7 @@ const companyData = [
         }
     },
     {
-        username: 'SEA ASIA',                           
+        username: 'SEAASIA',                           
         displayName: 'SEA ASIA SDN BHD',
         password: 'Sea@tkfant',
         lastServiceDate: '2024-07-24',
@@ -1275,6 +1275,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
