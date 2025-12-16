@@ -3,30 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Service Report</title>
-    <link rel="stylesheet" href="style.css">
-     <style>
-            /* Make company name bold */
-        .company-name {
-            font-weight: bold !important;
-        }
-         /* Stack cards vertically - all single column */
-        .service-history {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        /* Style for the status text inside Next Service card */
-        .status-text {
-            font-weight: 700 !important;
-            margin-top: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-    </style>
+    <title>Select Service Date</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="password-page">
+<body class="date-selection-page">
     <!-- Header Navigation -->
     <header class="header">
         <div class="container">
@@ -38,7 +18,7 @@
                 </div>
                 <nav class="nav-desktop">
                     <a href="index.html#hero" class="nav-link">Home</a>
-                    <a href="index.html#service" class="nav-link">Service Report</a>
+                    <a href="password.html" class="nav-link">Service Report</a>
                     <a href="index.html#contact" class="nav-link">Contact Us</a>
                 </nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -49,139 +29,185 @@
             </div>
             <nav class="nav-mobile" id="mobileMenu">
                 <a href="index.html#hero" class="nav-link">Home</a>
-                <a href="index.html#service" class="nav-link">Service Report</a>
+                <a href="password.html" class="nav-link">Service Report</a>
                 <a href="index.html#contact" class="nav-link">Contact Us</a>
             </nav>
         </div>
     </header>
 
-    <!-- Date Selection Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="password-container" style="max-width: 700px;">
-                <h1 class="title">Select Your Service Report</h1>
-                <p class="company-name" id="companyDisplay">Loading...</p>
-            
-               <!-- Service History Summary -->
-                <div class="date-section">
-                    <h3 class="section-header">Service Schedule</h3>
-
-                    <div class="service-history">
-                        <div class="history-card">
-                            <div class="history-icon">📅</div>
-                            <div class="history-info">
-                                <p>Last Service Date</p>
-                                <p id="lastServiceDate">Loading...</p>
-                            </div>
+    <!-- Date Selection Section - Centered -->
+    <div class="date-selection-page-wrapper">
+        <section class="hero date-selection-hero">
+            <div class="container">
+                <div class="password-container transparent-container">
+                    <h1 class="title">Select Service Date</h1>
+                    <p class="company-name" id="companyDisplay">Loading company...</p>
+                    
+                    <!-- Service Schedule Info -->
+                    <div class="service-schedule-info">
+                        <div class="schedule-item">
+                            <span class="schedule-label">📅 Last Service Date:</span>
+                            <span class="schedule-value" id="lastServiceDate">Loading...</span>
                         </div>
+                        <div class="schedule-item">
+                            <span class="schedule-label">🔔 Next Service Date:</span>
+                            <span class="schedule-value" id="nextServiceDate">Loading...</span>
+                        </div>
+                        <div class="schedule-item days-remaining" id="daysRemainingContainer" style="display: none;">
+                            <span class="schedule-label">⏰ Days Remaining:</span>
+                            <span class="schedule-value" id="daysRemaining">-</span>
+                        </div>
+                    </div>
 
-                        <div class="history-card">
-                            <div class="history-icon">🔔</div>
-                            <div class="history-info">
-                                <p>Next Service Date</p>
-                                <p id="nextServiceDate">Loading...</p>
-                                <p class="history-days" id="daysUntilNext"></p>
+                    <!-- Date Selection Section with Container -->
+                    <div class="date-section">
+                        <p style="color: white; text-align: center; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500;">
+                            👇 Click on a service date below to view reports
+                        </p>
+
+                        <!-- Date List Container with defined background -->
+                        <div class="date-list-container">
+                            <div id="dateList" class="date-list">
+                                <!-- Dates will be generated here by JavaScript -->
+                                <div style="color: white; text-align: center; padding: 2rem;">
+                                    Loading service history...
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <button type="button" id="backButton" class="back-button" style="margin-top: 2rem;">
+                        ← BACK TO LOGIN
+                    </button>
                 </div>
-
-                <!-- Available Service Reports -->
-                <div class="date-section">
-                    <h3 class="section-header">Select Your Service Report</h3>
-                    <p style="color: rgba(255, 255, 255, 0.9); text-align: center; margin-bottom: 1.5rem;">
-                        Click on a date below to view details
-                    </p>
-
-                    <div id="datesList" class="dates-list">
-                        <!-- Dates will be dynamically populated here by JavaScript -->
-                    </div>
-                </div>
-
-                <button type="button" onclick="window.location.href='password.html'" class="back-button">
-                 ← BACK TO PASSWORD
-                </button>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TK FANTASTIC SDN. BHD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load Company Data -->
     <script src="companyData.js"></script>
+    
+    <!-- Page Script -->
     <script>
         // ==================== AUTHENTICATION CHECK ====================
         const authenticated = localStorage.getItem('authenticated');
+        const authUsername = localStorage.getItem('authUsername');
         const authCompany = localStorage.getItem('authCompany');
-        const companyName = localStorage.getItem('companyName');
 
-        if (!authenticated || authCompany !== companyName) {
+        if (!authenticated || !authUsername || !authCompany) {
             window.location.href = 'password.html';
         }
 
-        // ==================== LOAD COMPANY DATA ====================
+        // ==================== LOAD DATA ====================
         const companyDisplay = document.getElementById('companyDisplay');
         const lastServiceDateEl = document.getElementById('lastServiceDate');
         const nextServiceDateEl = document.getElementById('nextServiceDate');
-        const daysUntilNextEl = document.getElementById('daysUntilNext');
-        const datesList = document.getElementById('datesList');
+        const daysRemainingEl = document.getElementById('daysRemaining');
+        const daysRemainingContainer = document.getElementById('daysRemainingContainer');
+        const dateList = document.getElementById('dateList');
 
-        if (companyName) {
-            companyDisplay.textContent = companyName;
+        // Get company data using the username
+        const company = findCompanyByUsername(authUsername);
 
-            const company = findCompany(companyName);
+        if (company) {
+            // Display the full company name
+            companyDisplay.textContent = company.displayName;
 
-            if (company) {
-                // Display last service date
+            // Display last service date
+            if (company.lastServiceDate) {
                 lastServiceDateEl.textContent = formatDate(company.lastServiceDate);
+            } else {
+                lastServiceDateEl.textContent = 'N/A';
+            }
 
-                // Display next service date with countdown
+            // Display next service date
+            if (company.nextServiceDate) {
                 nextServiceDateEl.textContent = formatDate(company.nextServiceDate);
-
+                
+                // Calculate and display days remaining
                 const daysUntil = calculateDaysUntil(company.nextServiceDate);
                 if (daysUntil !== null) {
-                    if (daysUntil > 0) {
-                        daysUntilNextEl.textContent = `(${daysUntil} days remaining)`;
-                        daysUntilNextEl.style.color = '#27863D';
-                        daysUntilNextEl.textshadow = '2px 2px 4px rgba(0, 0, 0, 0.3)';
+                    daysRemainingContainer.style.display = 'flex';
+                    
+                    if (daysUntil < 0) {
+                        daysRemainingEl.textContent = `Overdue by ${Math.abs(daysUntil)} days`;
+                        daysRemainingEl.style.color = '#ff6b6b';
+                        daysRemainingEl.style.fontWeight = 'bold';
                     } else if (daysUntil === 0) {
-                        daysUntilNextEl.textContent = '(Due Today!)';
-                        daysUntilNextEl.style.color = '#FFC107';
-                        daysUntilNextEl.style.fontWeight = '700';
+                        daysRemainingEl.textContent = 'Today!';
+                        daysRemainingEl.style.color = '#ffd93d';
+                        daysRemainingEl.style.fontWeight = 'bold';
+                    } else if (daysUntil <= 30) {
+                        daysRemainingEl.textContent = `${daysUntil} days (Due Soon!)`;
+                        daysRemainingEl.style.color = '#ffd93d';
+                        daysRemainingEl.style.fontWeight = 'bold';
                     } else {
-                        daysUntilNextEl.textContent = `(Overdue by ${Math.abs(daysUntil)} days!)`;
-                        daysUntilNextEl.style.color = '#d1362e';
-                        daysUntilNextEl.style.fontWeight = '700';
+                        daysRemainingEl.textContent = `${daysUntil} days`;
+                        daysRemainingEl.style.color = '#6bcf7f';
                     }
                 }
-
-                // Get service dates
-                const serviceDates = getServiceDates(companyName);
-
-                if (serviceDates && serviceDates.length > 0) {
-                    serviceDates.forEach(date => {
-                        const button = document.createElement('button');
-                        button.className = 'date-item';
-                        button.textContent = formatDate(date);
-                        button.onclick = () => selectDate(date);
-                        datesList.appendChild(button);
-                    });
-                } else {
-                    datesList.innerHTML = '<p style="color: rgba(255, 255, 255, 0.8); text-align: center; padding: 2rem;">No service dates available for this company.</p>';
-                }
             } else {
-                datesList.innerHTML = '<p style="color: rgba(255, 255, 255, 0.8); text-align: center; padding: 2rem;">Company not found.</p>';
+                nextServiceDateEl.textContent = 'N/A';
+            }
+
+            // Load service dates using username
+            const serviceDates = getServiceDates(authUsername);
+
+            if (serviceDates && serviceDates.length > 0) {
+                // Clear loading message
+                dateList.innerHTML = '';
+                
+                serviceDates.forEach(date => {
+                    const button = document.createElement('button');
+                    button.className = 'date-button';
+                    button.textContent = formatDate(date);
+                    
+                    button.onclick = () => {
+                        localStorage.setItem('selectedDate', date);
+                        window.location.href = 'fan-selection.html';
+                    };
+                    
+                    dateList.appendChild(button);
+                });
+            } else {
+                dateList.innerHTML = '<div class="no-data-message">No service records found for this company.</div>';
             }
         } else {
-            window.location.href = 'index.html';
-        }
-
-        function selectDate(date) {
-            localStorage.setItem('selectedDate', date);
-            window.location.href = 'fan-selection.html';
+            // Company not found, redirect to login
+            window.location.href = 'password.html';
         }
 
         // ==================== MOBILE MENU ====================
-        document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
-            document.getElementById('mobileMenu').classList.toggle('active');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+
+            const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // ==================== BACK BUTTON ====================
+        document.getElementById('backButton')?.addEventListener('click', function() {
+            localStorage.removeItem('authenticated');
+            localStorage.removeItem('authUsername');
+            localStorage.removeItem('authCompany');
+            localStorage.removeItem('companyName');
+            window.location.href = 'password.html';
         });
     </script>
 </body>
