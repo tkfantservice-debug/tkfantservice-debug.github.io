@@ -1152,7 +1152,7 @@ const companyData = [
     // ADD MORE COMPANIES HERE following the same pattern
     // Copy this template for each new company:
     /*
-    ,{
+    {
         username: 'shortname',                        
         displayName: 'FULL COMPANY NAME SDN BHD',     
         password: 'Password123',
@@ -1167,7 +1167,7 @@ const companyData = [
                 }
             }
         }
-    }
+    },
     */
 ];
 
@@ -1275,6 +1275,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
