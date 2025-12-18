@@ -811,7 +811,7 @@ html.homepage-full body {
 }
 
 .fan-button .fan-name {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: white !important;
     line-height: 1.4;
@@ -913,6 +913,7 @@ html.homepage-full body {
         max-width: 100%;
     }
 }
+
 
 
 
