@@ -614,7 +614,25 @@ const companyData = [
             }
         }
     },
-            {
+     {
+        username: 'KLN',                           
+        displayName: 'KLN LOGISTICS',
+        password: 'Kln@tkfant',
+        lastServiceDate: '2026-01-09',
+        nextServiceDate: '2027-01-09',
+        serviceDates: {
+            '2026-01-09': {
+                fans: ['Fan 1', 'Fan 2','Fan 3', 'Fan 4'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/13CPQmpWChRAlvrh5P8wyYYCgd1wVxP-D',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/19eZtxfI8XaPivMyQHv8KPeImPxzOyWqg',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/19JpEXgemQUom38vBglYqMukJFPej5Nvz',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1tOwQSm-NDyGybe_WjQR8FFcaO1304gJ1'
+                }
+            }
+        }
+    },
+    {
         username: 'KSP',                           
         displayName: 'KSP SPORTS',
         password: 'Ksp@tkfant',
@@ -830,6 +848,21 @@ const companyData = [
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Z4iEWHT6xQnKYJlLnpalqsajqsAhN0U1',
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/1ydO5-CKsPV7TdAOj5qSW_MZo-O0sDWlt'
+                }
+            }
+        }
+    },
+    {
+        username: 'PHYWON',                           
+        displayName: 'PHYWON SYSTEM',
+        password: 'Phywon@tkfant',
+        lastServiceDate: '2025-12-24',
+        nextServiceDate: '2026-12-24',
+        serviceDates: {
+            '2025-12-24': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1XB4D7Pin-MwUdft8ggOmHnlViPqEe70B'
                 }
             }
         }
@@ -1275,6 +1308,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
