@@ -674,8 +674,8 @@ const companyData = [
     },
     {
         username: 'LATICRETE',                           
-        displayName: 'LATICRETE(MALAYSIA) SDN BHD',
-        password: 'Laticrete@tkfant',
+        displayName: 'LATICRETE(MALAYSIA)SDN BHD',
+        password: 'Lc@tkfant',
         lastServiceDate: '2025-04-25',
         nextServiceDate: '2026-04-25',
         serviceDates: {
@@ -1324,6 +1324,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
