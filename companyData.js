@@ -676,14 +676,13 @@ const companyData = [
         username: 'LATICRETE',                           
         displayName: 'LATICRETE(MALAYSIA)SDN BHD',
         password: 'Lc@tkfant',
-        lastServiceDate: '2025-04-25',
-        nextServiceDate: '2026-04-25',
+        lastServiceDate: '2026-01-28',
+        nextServiceDate: '2027-01-28',
         serviceDates: {
-            '2025-04-25': {
-                fans: ['Fan 1', 'Fan 2'],
+            '2026-01-28': {
+                fans: ['Fan 1'],
                 reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1ymz8qNbOqRwss5YT5IGumrj8It0LigZk',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1lENUSjrcosXHUGvOK9T0uz_im7XnC1-U'
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1P_wU40QIMijhhDYliirxCxj62UqvA5-D'
                 }
             }
         }
@@ -1324,6 +1323,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
