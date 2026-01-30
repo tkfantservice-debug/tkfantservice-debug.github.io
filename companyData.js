@@ -269,22 +269,6 @@ const companyData = [
             }
         }
     },
-     {
-        username: 'ESTEEL',                           
-        displayName: 'ESTEEL',
-        password: 'Esteele@tkfant',
-        lastServiceDate: '2026-01-26',
-        nextServiceDate: '2027-01-26',
-        serviceDates: {
-            '2026-01-26': {
-                fans: ['Fan 1', 'Fan 2'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1qOwAvSnnJyobg0BkOaJeSB62EB-4swqZ',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/19mODUgb_4j5HutRzpiw8i3LVLpU5YnQJ'
-                }
-            }
-        }
-    },
     {
         username: 'EXHIBITION',                           
         displayName: 'EXHIBITION SAMPLE',
@@ -685,20 +669,6 @@ const companyData = [
                     'Fan 9(D16/D18)': 'https://drive.google.com/drive/u/2/folders/18PuJpHVVN8AFWzT41ji4aLyNZlu0tKfH',
                     'Fan 10(D16/D18)': 'https://drive.google.com/drive/u/2/folders/1Pa-u3r28xZ6z6E9aL7i1GOnPM7mjCM-h'
                 }
-            }
-        }
-    },
-    {
-        username: 'LATICRETE',                           
-        displayName: 'LATICRETE',
-        password: 'Laticrete@tkfant',
-        lastServiceDate: '2026-01-28',
-        nextServiceDate: '2027-01-28',
-        serviceDates: {
-            '2026-01-28': {
-                fans: ['Fan 1'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1P_wU40QIMijhhDYliirxCxj62UqvA5-D'
             }
         }
     },
@@ -1338,6 +1308,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
