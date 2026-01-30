@@ -673,6 +673,22 @@ const companyData = [
         }
     },
     {
+        username: 'LATICRETE',                           
+        displayName: 'LATICRETE(MALAYSIA) SDN BHD',
+        password: 'Laticrete@tkfant',
+        lastServiceDate: '2025-04-25',
+        nextServiceDate: '2026-04-25',
+        serviceDates: {
+            '2025-04-25': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1ymz8qNbOqRwss5YT5IGumrj8It0LigZk',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1lENUSjrcosXHUGvOK9T0uz_im7XnC1-U'
+                }
+            }
+        }
+    },
+    {
         username: 'LH',                           
         displayName: 'LH ELECTRIC & SERVICES',
         password: 'Lh@tkfant',
@@ -1308,6 +1324,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
