@@ -272,7 +272,7 @@ const companyData = [
     {
         username: 'ESTEEL',                           
         displayName: 'ESTEEL',
-        password: 'Esteel@tkfant',
+        password: 'Es@tkfant',
         lastServiceDate: '2026-01-17',
         nextServiceDate: '2027-01-17',
         serviceDates: {
@@ -1339,6 +1339,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
