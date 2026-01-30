@@ -270,6 +270,22 @@ const companyData = [
         }
     },
     {
+        username: 'ESTEEL',                           
+        displayName: 'ESTEEL',
+        password: 'Esteel@tkfant',
+        lastServiceDate: '2026-01-17',
+        nextServiceDate: '2027-01-17',
+        serviceDates: {
+            '2026-01-17': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1qOwAvSnnJyobg0BkOaJeSB62EB-4swqZ',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/19mODUgb_4j5HutRzpiw8i3LVLpU5YnQJ'
+                }
+            }
+        }
+    },
+    {
         username: 'EXHIBITION',                           
         displayName: 'EXHIBITION SAMPLE',
         password: 'bbnmm',
@@ -1323,6 +1339,7 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
+
 
 
 
