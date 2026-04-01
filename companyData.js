@@ -337,7 +337,7 @@ const companyData = [
                     'Fan 2': 'https://drive.google.com/drive/folders/1EwvaRy2Q2Og8GGeHbVRNCzVjZ3A2r_NX',
                     'Fan 3': 'https://drive.google.com/drive/u/2/folders/1ATHAA8H6zjfAYmu7BcDB6fiNP4sojW5Y',
                     'Fan 4': 'https://drive.google.com/drive/u/2/folders/1n12r6DGO9biC37zzgjELwM9eEEBPs16u'
-            }
+              }
             },
             '2025-08-08': {
                 fans: ['Fan 4'],
@@ -359,7 +359,17 @@ const companyData = [
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/116QRdN34EiKKQEneSagctsLz5fzSzlkw',
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/1I0bNvNimFSj6h6b8RwaHCACUezbNcBWv'
-
+                }
+            },
+            '2026-03-16': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5', 'Fan 6'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1x0J6U2RquGI03pNJusamRN_DD8v326-1',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1FLsBUNEXdRKM-_vkraYXmVjAcoe7lb8S',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1kZyFSa41JmuTTLYpD1cRa7gAsg4BN3Vi',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/18ZkDVOxrQi6f3dLPLnyCCw7QP1Yw90Hu',
+                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/17HGy3_EnRyYhXFdfbTG4G6yzVbYkFJTx',
+                    'Fan 6': 'https://drive.google.com/drive/u/2/folders/1unBLhmp3SUeTCqigImg1Fuy4zukYaVob'
                 }
             }            
         }
