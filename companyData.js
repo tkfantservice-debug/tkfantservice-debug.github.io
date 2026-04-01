@@ -853,6 +853,26 @@ const companyData = [
             }
         }
     },
+     {
+        username: 'NESTLEBT',                           
+        displayName: 'NESTLE MANUFACTURING (M) SDN BHD (B.TIGA)',
+        password: 'Bt@tkfant',
+        lastServiceDate: '2026-03-19',
+        nextServiceDate: '2027-03-19',
+        serviceDates: {
+            '2026-03-19': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5', 'Fan 6'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1zhCwyjp9mq-4Xk4H2qD1aE9jzz8pIMWv',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1QEeJ3l8RY-a6f-IsDdsnV_FooIg2XOll',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1TmdHaQBYMgYdb_2PHcxOFStaAKPj-twt',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1DHrkZoYZgMUkqtOA7BAvnlRm4aYsmD2V',
+                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/1upz66ftIzb8j0poFNCOCemOQyIDR9qvM',
+                    'Fan 6': 'https://drive.google.com/drive/u/2/folders/1KYwvE9lVXtjEBQyOTDzRJJoWec6b8WO0'
+                }
+            }
+        }
+    },
     {
         username: 'FAMA',                           
         displayName: 'PEJABAT FAMA',
