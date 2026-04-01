@@ -586,6 +586,12 @@ const companyData = [
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1zT6D-gHg8thH-Io1NJXKBoO8JbssoUuA',
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/10xtVL0YD8M7LOPaxIaYDq4uMsnJ7lc3R'
                 }
+            },
+            '2026-03-11': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1gWFrMAdcq3P3ML98pS_ROVUlW9r9JrpU'
+                }
             }
         }
     },
