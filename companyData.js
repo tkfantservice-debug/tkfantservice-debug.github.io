@@ -1176,9 +1176,9 @@ const companyData = [
         }
     },
     {
-        username: 'TAYLORTEG',                           
-        displayName: 'TAYLOR (TEG)',
-        password: 'Taylor@tkfant',
+        username: 'TAYLORHOSTEL',                           
+        displayName: 'TAYLOR (HOSTEL)',
+        password: 'Tayhostel@tkfant',
         lastServiceDate: '2024-09-14',
         nextServiceDate: '2025-09-14',
         serviceDates: {
@@ -1196,7 +1196,7 @@ const companyData = [
     {
         username: 'TAYLORUNI',                           
         displayName: 'TAYLOR (UNI)',
-        password: 'Tayloruni@tkfant',
+        password: 'Tayuni@tkfant',
         lastServiceDate: '2026-04-06',
         nextServiceDate: '2027-04-06',
         serviceDates: {
