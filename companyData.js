@@ -1179,41 +1179,9 @@ const companyData = [
         username: 'TAYLORHOSTEL',                           
         displayName: 'TAYLOR (HOSTEL)',
         password: 'Tayhostel@tkfant',
-        lastServiceDate: '2024-09-14',
-        nextServiceDate: '2025-09-14',
-        serviceDates: {
-            '2024-09-14': {
-                fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Lt2NLPEonu-s4J1VuRU68NQSXEyPkXsE',
-                    'Fan 2': 'http://drive.google.com/drive/u/2/folders/1BFLOtWBxYxemTcUjhjmhL2VA7IKc1SBz',
-                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1o9A-SC1Y2bTfeRAQyHf4k3Pj1iU7KKi7',
-                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1qaryvCURltYc5vs8Onxb7Qwy6ByXXHF0',
-                }
-            }
-        }
-    },
-    {
-        username: 'TAYLORUNI',                           
-        displayName: 'TAYLOR (UNI)',
-        password: 'Tayuni@tkfant',
         lastServiceDate: '2026-04-06',
         nextServiceDate: '2027-04-06',
         serviceDates: {
-            '2025-10-18': {
-                fans: ['Fan 1', 'Fan 2'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1LnuOsscpjosRHIX2M1GGudifZv8lvFoQ',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1bSGjP2Cg_ttY7sf5UlDmOH9QzORdzMvf'
-                }
-            },
-            '2026-04-03': {
-                fans: ['Fan 1', 'Fan 2'],
-                reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1YSCZaH565iOEYZe-c4SGZOn-sPHmQjDC',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1dWpK1oZdrLAjM4Y7SjdI9nDZ3deosdyJ'
-                 }
-            },
             '2026-04-06': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5','Fan 6','Fan 7'],
                 reportLinks: {
@@ -1224,6 +1192,40 @@ const companyData = [
                     'Fan 5': 'https://drive.google.com/drive/u/2/folders/1_sH1MOOKWHmw7Z_yFBPjiiNA5xWy19au',
                     'Fan 6': 'https://drive.google.com/drive/u/2/folders/1mWqQN5L-XXFQWowZ_C4wPS_yaA_GmnJn',
                     'Fan 7': 'https://drive.google.com/drive/u/2/folders/1TcZ_fyZfQFtUrd8fzb00k0EmTJL1F8y-'
+                }
+            }
+        }
+    },
+    {
+        username: 'TAYLORUNI',                           
+        displayName: 'TAYLOR (UNI)',
+        password: 'Tayuni@tkfant',
+        lastServiceDate: '2026-04-03',
+        nextServiceDate: '2027-04-03',
+        serviceDates: {
+            '2024-09-14': {
+                fans: ['Fan 1', 'Fan 2','Fan 3','Fan 4'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Lt2NLPEonu-s4J1VuRU68NQSXEyPkXsE',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1BFLOtWBxYxemTcUjhjmhL2VA7IKc1SBz',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1o9A-SC1Y2bTfeRAQyHf4k3Pj1iU7KKi7',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1qaryvCURltYc5vs8Onxb7Qwy6ByXXHF0',
+            
+                }
+            },
+            '2025-10-18': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1LnuOsscpjosRHIX2M1GGudifZv8lvFoQ',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1bSGjP2Cg_ttY7sf5UlDmOH9QzORdzMvf'
+            
+                }
+            },
+            '2026-04-03': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1YSCZaH565iOEYZe-c4SGZOn-sPHmQjDC',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1dWpK1oZdrLAjM4Y7SjdI9nDZ3deosdyJ'
                 }
             }
         }
