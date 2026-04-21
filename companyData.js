@@ -591,6 +591,21 @@ const companyData = [
             }
         }
     },
+    {
+        username: 'IOSV',                           
+        displayName: 'IO SETIA VENTURES',
+        password: 'Iosv@tkfant',
+        lastServiceDate: '2026-04-18',
+        nextServiceDate: '2027-04-18',
+        serviceDates: {
+            '2026-04-18': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1erjbX581gfbPoRekr48E79W99AMrrYy9'
+                }
+            }
+        }
+    },
     { 
         username: 'ISKANDAREDU',                           
         displayName: 'ISKANDAR EDUCATION ENTERPRISE SDN BHD',
