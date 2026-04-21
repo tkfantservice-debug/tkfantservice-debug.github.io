@@ -463,6 +463,25 @@ const companyData = [
         }
     },
     {
+        username: 'HANEKA',                           
+        displayName: 'HASIL ANEKA (DBKL)',                        
+        password: 'Haneka@tkfant',
+        lastServiceDate: '2026-04-11',
+        nextServiceDate: '2027-04-11',
+        serviceDates: {
+            '2026-04-11': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1QSQpNkpN-TUQ7MeHhFZu3RxF9CiKGPfo',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/13yD5cr056u120QCXizDfaxzoMIU0NtyV',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1YbsspjFIouJml-Po1oOcc06bjTYOAsw_',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1xqfw4ZvwDP40rJmQ_ZfyM9G3uAbUoNyI',
+                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/1jdCBhc8I9Zh-ctXgyPK8dUWtzRaBy9Vc'
+                }
+            }
+        }
+    },
+    {
         username: 'HONDA',                           
         displayName: 'HONDA LOGISTICS',
         password: 'Honda@tkfant',
