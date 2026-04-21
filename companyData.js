@@ -826,6 +826,21 @@ const companyData = [
         }
     },
     {
+        username: 'MBALAU',                                  
+        displayName: 'MUTIARA BALAU (ECO WORLD)',         
+        password: 'Mbalau@tkfant',
+        lastServiceDate: '2026-04-17',
+        nextServiceDate: '2027-04-17',
+        serviceDates: {
+            '2026-04-17': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/153ivgxoy6R-vXeLAj55qqGuVYuAsjdVh'
+                }
+            }
+        }
+    },
+    {
         username: 'NESTLECHB',                           
         displayName: 'NESTLE MANUFACTURING (M) SDN BHD (CHEMBONG)',
         password: 'Chembong@tkfant',
