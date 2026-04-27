@@ -255,7 +255,7 @@ const companyData = [
     },
     {
         username: 'ENSODEV',                           
-        displayName: 'ENSO DEVELOPMENT',
+        displayName: 'ENSO DEVELOPMENT SDN BHD',
         password: 'Enso@tkfant',
         lastServiceDate: '2026-04-24',
         nextServiceDate: '2027-04-24',
