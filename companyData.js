@@ -254,6 +254,22 @@ const companyData = [
         }
     },
     {
+        username: 'ENSODEV',                           
+        displayName: 'ENSO DEVELOPMENT',
+        password: 'Enso@tkfant',
+        lastServiceDate: '2026-04-24',
+        nextServiceDate: '2027-04-24',
+        serviceDates: {
+            '2026-04-24': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1nwoFetV8TiLFiznUSfcnEtzJRzlsIGYO',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1fEEQUAVU3Bmc-20-NtLTIfN2nUHiEibg'
+                }
+            }
+        }
+    },
+    {
         username: 'EMPIRE',                           
         displayName: 'EMPIRE FM SDN BHD',
         password: 'Empire@tkfant',
