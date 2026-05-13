@@ -3,6 +3,23 @@
 // Update everything here: names, passwords, dates, fans, and report links
 
 const companyData = [
+     {
+        username: 'AIRPANAS',                                  
+        displayName: 'AIR PANAS (DBKL)',         
+        password: 'Ap@tkfant',
+        lastServiceDate: '2026-05-07',
+        nextServiceDate: '2027-05-07',
+        serviceDates: {
+            '2026-05-07': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1hvAeIGgdISdhgKD0g2P6lJwW2OXZkoTC',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1_JmALSeUa9D-A1ts9RRxhUVxR7UI-75C',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1D-aK-tgUJklDUbkYyVPhgEZYadKMGe-x'
+                }
+            }
+        }
+    },
     {
         username: 'AFN',                                  
         displayName: 'AFN SPORTS EQUIPMENT SDN BHD',         
