@@ -1138,8 +1138,8 @@ const companyData = [
         username: 'STH',                           
         displayName: 'SIN TAI HING',
         password: 'Sin@tkfant',
-        lastServiceDate: '2026-06-26',
-        nextServiceDate: '2027-06-26',
+        lastServiceDate: '2026-06-09',
+        nextServiceDate: '2027-06-09',
         serviceDates: {
             '2023-12-15': {
                 fans: ['Fan 1', 'Fan 2'],
@@ -1155,7 +1155,7 @@ const companyData = [
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/1lB8z42XgiXT1qCxC8UhHfb3RQeBLOa2n'
                 }
             },
-            '2026-06-26': {
+            '2026-06-09': {
                 fans: ['Fan 1', 'Fan 2','Fan 3'],
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Ovjzv__6y8_kOgv8IU3EhzA6TrHZmfGv',
