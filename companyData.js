@@ -444,6 +444,21 @@ const companyData = [
             }
         }
     },
+     {
+        username: 'FSFA',                           
+        displayName: 'FOUR SEASON FOOD AVENUE',                        
+        password: 'Fs@tkfant',
+        lastServiceDate: '2026-05-27',
+        nextServiceDate: '2027-05-27',
+        serviceDates: {
+            '2026-05-27': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1jibjc2V_f7Wg5D8ToTeWzurPSONJZEPz',
+                }
+            }
+        }
+    },
     {
         username: 'FURI',                           
         displayName: 'FURI GLOBAL SDN BHD',
