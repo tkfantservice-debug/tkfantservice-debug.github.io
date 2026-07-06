@@ -1381,6 +1381,22 @@ const companyData = [
         }
     },
     {
+        username: 'YCH',                           
+        displayName: 'YCH DISTRIPARK SDN BHD (SHAH ALAM)',
+        password: 'Ych@tkfant',
+        lastServiceDate: '2026-06-15',
+        nextServiceDate: '2027-06-15',
+        serviceDates: {
+            '2026-06-15': {
+                fans: ['Fan 1'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1byiu3tmWfjBufTtRa_jy2qiKrhsSbHrL'
+                }
+            }
+        }
+    },
+
+    {
         username: 'YINGWAH',                           
         displayName: 'YINGWAH',
         password: 'Yingwah@tkfant',
