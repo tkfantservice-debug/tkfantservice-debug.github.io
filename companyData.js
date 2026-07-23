@@ -659,6 +659,23 @@ const companyData = [
         }
     },
     {
+        username: 'InvHorizon',                           
+        displayName: 'INVICTUS HORIZON (JOHOR)',
+        password: 'Inv@tkfant',
+        lastServiceDate: '2026-07-16',
+        nextServiceDate: '2027-07-16',
+        serviceDates: {
+            '2026-07-16': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1O7-TAmNoUvteJow3HixHaf8yX_MjC9wy',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1YDgGfIw4C0ggvaeSDdmnsjxGunfloLyu',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/13h6ZJ0EqdjlnmXgdTmMnOMlNKRw-n3Gz'
+                }
+            }
+        }
+    },
+    {
         username: 'IOSV',                           
         displayName: 'IO SETIA VENTURES',
         password: 'Iosv@tkfant',
