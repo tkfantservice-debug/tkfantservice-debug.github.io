@@ -665,12 +665,21 @@ const companyData = [
         lastServiceDate: '2026-07-16',
         nextServiceDate: '2027-07-16',
         serviceDates: {
-            '2026-07-16': {
+            '2026-07-15': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3'],
                 reportLinks: {
-                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1O7-TAmNoUvteJow3HixHaf8yX_MjC9wy',
-                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1YDgGfIw4C0ggvaeSDdmnsjxGunfloLyu',
-                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/13h6ZJ0EqdjlnmXgdTmMnOMlNKRw-n3Gz'
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/14-fDVA0zNq4M9vTp-UDiDOvlx1qQQTTu',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/10dEQoRUdb6b1NVXa5YngvYcmUCsuxKZa',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1ZEbZMjymfRKOgnRVThMwIoY7VcBDzvbk'
+                
+               }
+            },
+             '2026-07-16': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1DQTVqL8Z2WetItIgBC3hcLkiXcab8izm',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1s8fvMlud4IHuvMVWdevmCT_M8CrG5n5b',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/18Q1HqA9Cql0hnxZ5ONR7cf-Q-rVKemUZ'
                 }
             }
         }
