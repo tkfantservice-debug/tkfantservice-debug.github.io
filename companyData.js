@@ -249,6 +249,25 @@ const companyData = [
         }
     },
     {
+        username: 'DBRHICOM',                           
+        displayName:  'DBR-HICOM AUTO SOLUTIONS SDN BHD',
+        password: 'DBRHC@tkfant',
+        lastServiceDate: '2026-09-08',
+        nextServiceDate: '2027-09-08',
+        serviceDates: {
+            '2026-09-08': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1Cm-5f5md_dRgIn_8qKbU34cCrxgvo0rt',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/1Vkp5XC9RGROv2WTXWeZMiGtOv5QQkpSR',
+                    'Fan 3': 'https://drive.google.com/drive/u/1/folders/13zGDGxiCAmXQc-pGsOp5ktX2EIHDAdNl',
+                    'Fan 4': 'https://drive.google.com/drive/u/1/folders/1LFfwymkjPZnzixRLpidbDxYqNL9irnQO',
+                    'Fan 5': 'https://drive.google.com/drive/u/1/folders/1aJ6Wxynvy0gKLIjRPSnfk_oUAk1_HKfl'
+                }
+            }
+        }
+    },
+    {
         username: 'ECRL',                           
         displayName: 'ECRL',
         password: 'Ecrl@tkfant',
