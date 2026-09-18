@@ -1023,6 +1023,22 @@ const companyData = [
         }
     },
     {
+        username: 'NEXTLOG',                           
+        displayName: 'NEXT LOGISTICS SDN BHD',
+        password: 'NL@tkfant',
+        lastServiceDate: '2026-09-12',
+        nextServiceDate: '2027-09-12',
+        serviceDates: {
+            '2026-09-12': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1IdvE7uXfsCR7IzMM9WStcrzu2ZHcBjyq',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/1vdPMqDgQMYsqxMWNMXexoemb50sSdPzN'
+                }
+            }
+        }
+    },
+    {
         username: 'FAMA',                           
         displayName: 'PEJABAT FAMA',
         password: 'Pf@tkfant',
