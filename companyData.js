@@ -233,6 +233,33 @@ const companyData = [
             }
         }
     },
+     {
+        username: 'DBKL',                           
+        displayName: 'DBKL',
+        password: 'DBKL@tkfant',
+        lastServiceDate: '-',
+        nextServiceDate: '-',
+        serviceDates: {
+            '2026-05-07 AIR PANAS': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1hvAeIGgdISdhgKD0g2P6lJwW2OXZkoTC',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/1_JmALSeUa9D-A1ts9RRxhUVxR7UI-75C',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1D-aK-tgUJklDUbkYyVPhgEZYadKMGe-x'
+                }
+            },
+             '2026-04-11 HASIL ANEKA': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/2/folders/1QSQpNkpN-TUQ7MeHhFZu3RxF9CiKGPfo',
+                    'Fan 2': 'https://drive.google.com/drive/u/2/folders/13yD5cr056u120QCXizDfaxzoMIU0NtyV',
+                    'Fan 3': 'https://drive.google.com/drive/u/2/folders/1YbsspjFIouJml-Po1oOcc06bjTYOAsw_',
+                    'Fan 4': 'https://drive.google.com/drive/u/2/folders/1xqfw4ZvwDP40rJmQ_ZfyM9G3uAbUoNyI',
+                    'Fan 5': 'https://drive.google.com/drive/u/2/folders/1jdCBhc8I9Zh-ctXgyPK8dUWtzRaBy9Vc'
+                }
+            }
+        }
+    },
     {
         username: 'DHUB',                           
         displayName: 'DHUB',
