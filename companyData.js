@@ -249,9 +249,9 @@ const companyData = [
         }
     },
     {
-        username: 'DBRHICOM',                           
-        displayName:  'DBR-HICOM AUTO SOLUTIONS SDN BHD',
-        password: 'DBRHC@tkfant',
+        username: 'DRBHICOM',                           
+        displayName:  'DRB-HICOM AUTO SOLUTIONS SDN BHD',
+        password: 'DRBHC@tkfant',
         lastServiceDate: '2026-09-08',
         nextServiceDate: '2027-09-08',
         serviceDates: {
