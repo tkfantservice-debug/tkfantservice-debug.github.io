@@ -1567,10 +1567,25 @@ function getServiceDates(identifier) {
     if (!company) return [];
     
     return Object.keys(company.serviceDates).sort((a, b) => {
-        if (a === 'N/A' || a === 'Photo') return 1;
-        if (b === 'N/A' || b === 'Photo') return -1;
-        return new Date(b) - new Date(a);
+        const partsA = splitServiceKey(a);
+        const partsB = splitServiceKey(b);
+        if (partsA.date === 'N/A' || partsA.date === 'Photo') return 1;
+        if (partsB.date === 'N/A' || partsB.date === 'Photo') return -1;
+        const diff = new Date(partsB.date) - new Date(partsA.date);
+        if (diff) return diff;
+        // Same date at different locations: sort by location name
+        return partsA.location.localeCompare(partsB.location);
     });
+}
+
+// Split a service date key into its date and optional location.
+// '2026-05-07 AIR PANAS' -> { date: '2026-05-07', location: 'AIR PANAS' }
+// '2025-03-28'           -> { date: '2025-03-28', location: '' }
+function splitServiceKey(key) {
+    const match = String(key).trim().match(/^(\d{4}-\d{2}-\d{2})\s+(.+)$/);
+    return match
+        ? { date: match[1], location: match[2].trim() }
+        : { date: String(key), location: '' };
 }
 
 // Get fans for a specific date
@@ -1594,16 +1609,20 @@ function getCompanyDisplayName(identifier) {
 }
 
 // Format date for display
+// Accepts a plain date ('2025-03-28') or a date + location ('2026-05-07 AIR PANAS')
 function formatDate(dateString) {
     if (dateString === 'N/A' || dateString === 'Photo') return dateString;
     
     try {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', { 
+        const { date: datePart, location } = splitServiceKey(dateString);
+        const date = new Date(datePart);
+        if (isNaN(date.getTime())) return dateString;   // e.g. '-' stays as '-'
+        const formatted = date.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
         });
+        return location ? `${formatted} - ${location}` : formatted;
     } catch {
         return dateString;
     }
@@ -1618,6 +1637,7 @@ function calculateDaysUntil(dateString) {
         today.setHours(0, 0, 0, 0);
         
         const targetDate = new Date(dateString);
+        if (isNaN(targetDate.getTime())) return null;   // e.g. '-' -> no countdown
         targetDate.setHours(0, 0, 0, 0);
         
         const diffTime = targetDate - today;
@@ -1626,17 +1646,3 @@ function calculateDaysUntil(dateString) {
         return null;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
