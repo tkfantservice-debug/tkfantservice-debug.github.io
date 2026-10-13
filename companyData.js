@@ -40,8 +40,8 @@ const companyData = [
         username: 'AKER',                           
         displayName: 'AKER SOLUTIONS',              
         password: 'Aker@tkfant',
-        lastServiceDate: '2025-08-16',
-        nextServiceDate: '2026-08-16',
+        lastServiceDate: '2026-10-10',
+        nextServiceDate: '2027-10-10',
         serviceDates: {
             '2025-08-30': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
@@ -81,6 +81,16 @@ const companyData = [
                     'Fan 3': 'https://drive.google.com/drive/folders/172lfcJSOWkoxCSj5XbYbd7TzrKODv03M',
                     'Fan 4': 'https://drive.google.com/drive/folders/10x0zdrKVqSP5_DOWiSgWC3XfzbVvCHn8',
                     'Fan 5': 'https://drive.google.com/drive/folders/1Y9W6pQunGcU8nVwo9-YoO83NeFDLizh3'
+                }
+            },
+            '2026-10-10': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1hlZHBqlDjyGyPxfBySKv9CLTywhzcc-X',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/12CuEi0Pe2FIqDSjXs5pVA2CzW7K1S8Uk',
+                    'Fan 3': 'https://drive.google.com/drive/u/1/folders/1FGBOU3dgugImyx8Z5tevIC8H6H6oSQEk',
+                    'Fan 4': 'https://drive.google.com/drive/u/1/folders/13QjogLJkGnoLX1KqBmnlsBZsMZYoONrG',
+                    'Fan 5': 'https://drive.google.com/drive/u/1/folders/1xW24wryCTYabhf-L06s0BYJUiBWygnaC'
                 }
             }
         }
