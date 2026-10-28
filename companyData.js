@@ -100,9 +100,7 @@ const companyData = [
                     'Fan 7': 'https://drive.google.com/drive/u/1/folders/1T2B00Rie6Y3Hi5647nfd6pQcIQEmRNYB',
                     'Fan 8': 'https://drive.google.com/drive/u/1/folders/1eSRBF1O8XShrQcpzC4sVeM8Xpr0mONZM',
                     'Fan 9': 'https://drive.google.com/drive/u/1/folders/1LKru2c3APgVgnRFiADjEqZuFzSyLTTXD',
-                    'Fan 10': 'https://drive.google.com/drive/u/1/folders/1gfT1WFrtGVGeCZyArfCfwlG08TeeO-gj'
-                }
-            },    
+                    'Fan 10': 'https://drive.google.com/drive/u/1/folders/1gfT1WFrtGVGeCZyArfCfwlG08TeeO-gj'  
                 }
             }
         }
