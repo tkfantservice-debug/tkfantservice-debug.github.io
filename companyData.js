@@ -1342,6 +1342,48 @@ const companyData = [
         }
     },
     {
+        username: 'SKB',                           
+        displayName: 'SKB SHUTTERS',
+        password: 'SKB@tkfant',
+        lastServiceDate: '2026-10-23',
+        nextServiceDate: '2027-10-23',
+        serviceDates: {
+            '2026-10-23': {
+                fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5','Fan 6', 'Fan 7', 'Fan 8', 'Fan 9', 'Fan 10','Fan 11', 'Fan 12', 'Fan 13', 'Fan 14', 'Fan 15','Fan 16', 'Fan 17', 'Fan 18', 'Fan 19', 'Fan 20','Fan 21', 'Fan 22', 'Fan 23', 'Fan 24', 'Fan 25','Fan 26', 'Fan 27', 'Fan 28'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1DI1uQhaCOps_0lY9Fot4bK_N-C_Gj0lE',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/1OiZqP5z4ytnxRxyD0M6DK2oEWuShvZZo',
+                    'Fan 3': 'https://drive.google.com/drive/u/1/folders/1arS8cFIgW_h3vMVsnqia19eL6Uk7xmp0',
+                    'Fan 4': 'https://drive.google.com/drive/u/1/folders/1SiYT4UPm6M8ZNHD07o2mp3NpKTt5hdPB', 
+                    'Fan 5': 'https://drive.google.com/drive/u/1/folders/12F2kzLpC7coyG4xWpa8mEPhzWoXHZK8U',
+                    'Fan 6': 'https://drive.google.com/drive/u/1/folders/17rcPBwpJRcBtmwWPDyrqM-cYzJtbFx7W',
+                    'Fan 7': 'https://drive.google.com/drive/u/1/folders/1EaDB6CVYMG67JaJ44We19AEXvYFuZCrT',
+                    'Fan 8': 'https://drive.google.com/drive/u/1/folders/17JZ_Nh2rUqY7Q06-5ZAani009znb4T-_', 
+                    'Fan 9': 'https://drive.google.com/drive/u/1/folders/12aXt1iAiTX4v1yo-w-TxFlP7PlvEQL9Y',
+                    'Fan 10': 'https://drive.google.com/drive/u/1/folders/1oUq3VwMVyxVr_bsNW0rPerNZJJkIsZyh',
+                    'Fan 11': 'https://drive.google.com/drive/u/1/folders/1F72wfcoJy_pLpU5pfuIS-u1u-OIaRzq4',
+                    'Fan 12': 'https://drive.google.com/drive/u/1/folders/147ExzENpXTQeYStu0nVehYnC347r7Deu',
+                    'Fan 13': 'https://drive.google.com/drive/u/1/folders/1zzvo1ulVkEH5nzzyH8bua-OVvx_Meg05',
+                    'Fan 14': 'https://drive.google.com/drive/u/1/folders/1TqY9uHuirad7GJHMvyaFa0JgPJplePFs', 
+                    'Fan 15': 'https://drive.google.com/drive/u/1/folders/1nCUvlCHpTDPfs1h27kAzpeAOyIYVd00Y',
+                    'Fan 16': 'https://drive.google.com/drive/u/1/folders/1X02gphzH-2bRBUJyWvEdcYdJwFVpjkQi',
+                    'Fan 17': 'https://drive.google.com/drive/u/1/folders/17PucERALc58GkMsaWDlfpD2Y9hYcxEuL',
+                    'Fan 18': 'https://drive.google.com/drive/u/1/folders/1HZw6iQqVv8JFn5G-rivvqod9TxpK0sav', 
+                    'Fan 19': 'https://drive.google.com/drive/u/1/folders/1eEGAkV2C3NyCvEvdslu0vybdcsEpUDVA',
+                    'Fan 20': 'https://drive.google.com/drive/u/1/folders/16spT_ZJuBuLLKmvL1gCJAUKeoUN2Nxy1', 
+                    'Fan 21': 'https://drive.google.com/drive/u/1/folders/1f6jujoF1GDWyl5lEIB1D-4OGTRGji_OU',
+                    'Fan 22': 'https://drive.google.com/drive/u/1/folders/1BZYLHWgXDDaOJnb3Ph2yFa_Ci7wNYiNF',
+                    'Fan 23': 'https://drive.google.com/drive/u/1/folders/19CbvyyWYgdRf0SFb1YSB260rccgHtkp8',
+                    'Fan 24': 'https://drive.google.com/drive/u/1/folders/1Dw86lyxrdci7kpo6KRNFpjgaB6hKDk4o', 
+                    'Fan 25': 'https://drive.google.com/drive/u/1/folders/190KmhSx953QSAaibRn7H-Vdc7TWVtJjc',
+                    'Fan 26': 'https://drive.google.com/drive/u/1/folders/1nzWtlo6IGN7bcmzeQp5ecqqNehAj1VDS',
+                    'Fan 27': 'https://drive.google.com/drive/u/1/folders/1YAx8s657scDip-aS4kJddJfjDJXXzUra',
+                    'Fan 28': 'https://drive.google.com/drive/u/1/folders/1gke4O7kM79MyaioP0S_x36ODFp-33BdR'
+                }
+            }
+        }
+    },
+    {
         username: 'TELOKDATOK',                           
         displayName: 'SMK TELOK DATOK',
         password: 'Smk@tkfant',
