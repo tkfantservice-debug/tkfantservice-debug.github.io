@@ -40,8 +40,8 @@ const companyData = [
         username: 'AKER',                           
         displayName: 'AKER SOLUTIONS',              
         password: 'Aker@tkfant',
-        lastServiceDate: '2026-10-10',
-        nextServiceDate: '2027-10-10',
+        lastServiceDate: '2026-10-24',
+        nextServiceDate: '2027-10-24',
         serviceDates: {
             '2025-08-30': {
                 fans: ['Fan 1', 'Fan 2', 'Fan 3', 'Fan 4', 'Fan 5'],
