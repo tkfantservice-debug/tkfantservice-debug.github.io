@@ -277,6 +277,13 @@ const companyData = [
                     'Fan 4': 'https://drive.google.com/drive/u/2/folders/1xqfw4ZvwDP40rJmQ_ZfyM9G3uAbUoNyI',
                     'Fan 5': 'https://drive.google.com/drive/u/2/folders/1jdCBhc8I9Zh-ctXgyPK8dUWtzRaBy9Vc'
                 }
+            },
+            '2026-11-03 TASIK TITIWANGSA': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1lpoFJllG0jVYiPfvZSab0QBPCHf-1KoJ',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/1MVKO1Rv8LZKVlkiTc3ZLVkteTxzAy14t'
+                }
             }
         }
     },
@@ -1426,6 +1433,22 @@ const companyData = [
                 reportLinks: {
                     'Fan 1': 'https://drive.google.com/drive/u/2/folders/1Xd4LGdw7pWBsVRHhI1mDx4bktdPc3FHO',
                     'Fan 2': 'https://drive.google.com/drive/u/2/folders/1PsKubdEvQGlhyuFCBitXhNfbQDnzX4Ud'
+                }
+            }
+        }
+    },
+    {
+        username: 'TASIKTITI',                           
+        displayName: 'TASIK TITIWANGSA(DBKL)',
+        password: 'TT@tkfant',
+        lastServiceDate: '2026-11-03',
+        nextServiceDate: '2027-11-03',
+        serviceDates: {
+            '2026-11-03': {
+                fans: ['Fan 1', 'Fan 2'],
+                reportLinks: {
+                    'Fan 1': 'https://drive.google.com/drive/u/1/folders/1lpoFJllG0jVYiPfvZSab0QBPCHf-1KoJ',
+                    'Fan 2': 'https://drive.google.com/drive/u/1/folders/1MVKO1Rv8LZKVlkiTc3ZLVkteTxzAy14t'
                 }
             }
         }
